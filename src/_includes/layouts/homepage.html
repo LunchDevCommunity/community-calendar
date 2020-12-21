@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lunch.dev Community Calendar</title>
+</head>
+<body>
+	<main>
+		<h1>Lunch.dev Community Calendar</h1>
+		<ul>
+			{% for event in collections.upcomingEvents %}
+			{{ event | log }}
+			<li>
+				<a href="{{ event.url }}">
+					{{ event.data.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<ul>
+			{% for event in collections.pastEvents %}
+			{{ event | log }}
+			<li>
+				<a href="{{ event.url }}">
+					{{ event.data.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</main>
+</body>
+</html>

@@ -5,10 +5,13 @@
   "author": "Ben Myers <ben.myers@okstate.edu>",
   "license": "MIT",
   "scripts": {
-	  "build": "eleventy",
-	  "dev": "eleventy --serve"
+    "build": "eleventy",
+    "dev": "eleventy --serve"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "date-fns": "^2.16.1",
+    "markdown-it": "^12.0.4",
+    "markdown-it-emoji": "^2.0.0"
   }
 }
