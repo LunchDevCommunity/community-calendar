@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ title }} | Lunch.dev Community Calendar</title>
+</head>
+<body>
+	{% include partials/header.html %}
+	<main>
+		<h1>{{ title }}</h1>
+		{% if speakers %}
+		<ul>
+			{% for speaker in speakers %}
+			<li>{{ speaker }}</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+		{{ content }}
+	</main>
+</body>
+</html>
