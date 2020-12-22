@@ -6,12 +6,23 @@
   "license": "MIT",
   "scripts": {
     "build": "eleventy",
-    "dev": "eleventy --serve"
+    "dev": "eleventy --serve",
+    "format": "prettier --write \"src/**/*.md\""
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
     "date-fns": "^2.16.1",
     "markdown-it": "^12.0.4",
     "markdown-it-emoji": "^2.0.0"
+  },
+  "devDependencies": {
+    "husky": "^4.3.6",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
