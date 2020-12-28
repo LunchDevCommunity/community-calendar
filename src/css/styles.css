@@ -1,0 +1,16 @@
+[data-typeface='system-ui'] {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+    sans-serif;
+}
+
+/* TODO: consider more advanced Grid layout
+ * https://www.joshwcomeau.com/css/full-bleed/
+ */
+:root {
+  --pageContentWidth: 60ch;
+  --mainPadding: calc(100% - var(--pageContentWidth));
+}
+
+[data-layout='centered-single-column'] {
+  padding: 0 calc(var(--mainPadding) / 2);
+}
