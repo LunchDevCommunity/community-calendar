@@ -3,16 +3,16 @@ const emoji = require('markdown-it-emoji');
 
 const { isAfter, isBefore } = require('date-fns');
 
-module.exports = (eleventyConfiguration) => {
-  eleventyConfiguration.addCollection('events', (collectionApi) => {
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addCollection('events', (collectionApi) => {
     return collectionApi.getFilteredByGlob('./src/schedule/*.md');
   });
-  eleventyConfiguration.addCollection('pastEvents', (collectionApi) => {
+  eleventyConfig.addCollection('pastEvents', (collectionApi) => {
     return collectionApi
       .getFilteredByGlob('./src/schedule/*.md')
       .filter((event) => isBefore(new Date(event.data.date), new Date()));
   });
-  eleventyConfiguration.addCollection('upcomingEvents', (collectionApi) => {
+  eleventyConfig.addCollection('upcomingEvents', (collectionApi) => {
     return collectionApi
       .getFilteredByGlob('./src/schedule/*.md')
       .filter((event) => isAfter(new Date(event.data.date), new Date()));
@@ -24,7 +24,7 @@ module.exports = (eleventyConfiguration) => {
 
   markdown.use(emoji);
 
-  eleventyConfiguration.setLibrary('md', markdown);
+  eleventyConfig.setLibrary('md', markdown);
 
   return {
     dir: {
