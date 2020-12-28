@@ -1,9 +1,19 @@
 ---
-title: Eleventy at 11(pt)
-date: 2020-12-14
+title: Eleventy at 11
+date: 2020-12-14 17:00:00
+speakers:
+  - Robb Schuneman
+  - chantastic
 ---
 
-Robb Schuneman and I are pairing on an Eleventy site deployed to Netlify.
-Robb is working on a new personal site. After some discussion in #accessibility, he decided move forward with [11ty](https://www.11ty.dev/) and [Netlify](https://www.netlify.com/).
+Robb Schuneman and Chantastic are pairing on an Eleventy site deployed to Netlify.
+Robb is working on a new personal site. After some discussion in #accessibility, he decided yo move forward with [Eleventy](https://www.11ty.dev/) and [Netlify](https://www.netlify.com/).
 He graciously agreed to stream the learning process for the benefit of others here.
 It'll be fun! And you don't need any previous knowledge to learn with us.
+
+Check out [Robb's repo](https://github.com/chalkeater/robb-shoes)!
+
+## Shared Links
+
+* [Eleventy docs](https://11ty.dev/docs/)
+* [The `eleventy-base-blog` starter](https://github.com/11ty/eleventy-base-blog)
