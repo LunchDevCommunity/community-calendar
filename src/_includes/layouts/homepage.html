@@ -10,13 +10,20 @@
   <body data-typeface="system-ui">
     <main data-layout="centered-single-column">
       <h1>Lunch.dev Community Calendar</h1>
+
+      <h2>Upcoming Events</h2>
       <ul>
         {% for event in collections.upcomingEvents %} {{ event | log }}
         <li>
           <a href="{{ event.url }}"> {{ event.data.title }} </a>
+          {% if event.data.type %}
+          <span>{{ event.data.type }}</span>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
+
+      <h2>Past Events</h2>
       <ul>
         {% for event in collections.pastEvents %} {{ event | log }}
         <li>
