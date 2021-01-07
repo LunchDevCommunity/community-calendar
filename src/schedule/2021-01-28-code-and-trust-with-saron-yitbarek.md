@@ -2,7 +2,6 @@
 title: Code and Trust with Saron Yitbarek
 type: Episode Party
 date: 2021-01-28
-layout: layouts/event.html
 ---
 
 Live listen and discussion of Saron Yitbarek's [React Podcast](https://reactpodcast.com) episode on the CodeNewbie community.  

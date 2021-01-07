@@ -2,7 +2,6 @@
 title: Get Access with Aaron Cannon
 type: Episode Party
 date: 2021-01-28
-layout: layouts/event.html
 ---
 
 Live listen and discussion of Aaron Cannon's [React Podcast](https://reactpodcast.com) episode on accessibility.  
