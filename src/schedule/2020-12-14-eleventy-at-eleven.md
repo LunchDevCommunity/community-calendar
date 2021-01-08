@@ -13,7 +13,11 @@ It'll be fun! And you don't need any previous knowledge to learn with us.
 
 Check out [Robb's repo](https://github.com/chalkeater/robb-shoes)!
 
+<div data-responsive-youtube--container>
+<iframe src="https://www.youtube.com/embed/zOM4RvrHUe8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Shared Links
 
-* [Eleventy docs](https://11ty.dev/docs/)
-* [The `eleventy-base-blog` starter](https://github.com/11ty/eleventy-base-blog)
+- [Eleventy docs](https://11ty.dev/docs/)
+- [The `eleventy-base-blog` starter](https://github.com/11ty/eleventy-base-blog)
