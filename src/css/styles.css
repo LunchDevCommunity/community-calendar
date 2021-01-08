@@ -11,6 +11,25 @@
   --mainPadding: calc(100% - var(--pageContentWidth));
 }
 
+#navbar {
+	width: 100%;
+	background-color: black;
+	padding: 1%;
+	margin-bottom: 1.5em;
+}
+
+#navbar a {
+	color: white;
+	font-weight: 900;
+	text-decoration: none;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 24pt;
+}
+
+#navbar a:hover {
+	color: gold;
+}
+
 [data-layout='centered-single-column'] {
   padding: 0 calc(var(--mainPadding) / 2);
 }
