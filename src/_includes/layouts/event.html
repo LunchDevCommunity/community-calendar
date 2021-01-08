@@ -14,15 +14,15 @@
 	{% include partials/header.html %}
     <div data-layout="centered-single-column">
       <main>
-        <h1>{{ title }}</h1>
-        {% if speakers %}
-        <ul>
-          {% for speaker in speakers %}
-          <li>{{ speaker }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %} {{ content }}
+		<h1>{{ title }}</h1>
+		<small>
+			{% if speakers %}
+			{{ speakers | join: ', ' }} &middot; 
+			{% endif %}
+			{{ date }}
+		</small>
         <p>Join this event <a href="https://discord.com/invite/q9ZdBgP">in Discord</a></p>
+        {{ content }}
       </main>
     </div>
   </body>
