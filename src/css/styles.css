@@ -34,3 +34,8 @@
 main > * + * {
 	margin-top: 1.5em;
 }
+
+p code {
+	font-family: 'Source Code Pro', monospace;
+	font-style: italic;
+}
