@@ -12,13 +12,17 @@ The streaming software [<abbr title="Open Broadcaster Software">OBS</abbr>](http
 
 In this event, we covered:
 
-* Using <abbr title="Open Broadcaster Software">OBS</abbr>'s `Browser` source
-* The [tmi.js](https://tmijs.com/) and [ComfyJS](https://github.com/instafluff/ComfyJS) JavaScript libraries for getting Twitch chat events
-* Using <abbr title="Document Object Model">DOM</abbr> manipulation to display chat messages
-* Using `overflow` and flexbox in CSS to get the rising chatbox feel
+- Using <abbr title="Open Broadcaster Software">OBS</abbr>'s `Browser` source
+- The [tmi.js](https://tmijs.com/) and [ComfyJS](https://github.com/instafluff/ComfyJS) JavaScript libraries for getting Twitch chat events
+- Using <abbr title="Document Object Model">DOM</abbr> manipulation to display chat messages
+- Using `overflow` and flexbox in CSS to get the rising chatbox feel
+
+<div data-responsive-youtube--container>
+<iframe src="https://www.youtube.com/embed/aJiIF9I6fuc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Mentioned Resources
 
-* [tmi.js](https://tmijs.com/) - a JavaScript library for hooking up your code to a Twitch chat
-* [ComfyJS](https://github.com/instafluff/ComfyJS) - a community-built wrapper around tmi.js that's a little more dev-friendly
-* [John Otander's post on `tomato`](https://johno.com/tomato/) - John agrees that `tomato` is the best named CSS color
+- [tmi.js](https://tmijs.com/) - a JavaScript library for hooking up your code to a Twitch chat
+- [ComfyJS](https://github.com/instafluff/ComfyJS) - a community-built wrapper around tmi.js that's a little more dev-friendly
+- [John Otander's post on `tomato`](https://johno.com/tomato/) - John agrees that `tomato` is the best named CSS color
