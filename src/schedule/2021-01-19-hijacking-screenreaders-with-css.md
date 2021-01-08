@@ -6,7 +6,7 @@ speakers:
   - Ben Myers
 ---
 
-**Mislead screenreaders** into changing how they announce content or into forgetting the underlying semantics of your page — **one CSS rule at a time.** Behold, the chaos that can be caused with just a single `list-style: none` or a `text-transform: uppercase`! We'll challenge the separation of presentation and content, go on a tour through browser and operating system internals, and learn how our page is exposed to assistive technology. You won't want to miss this one.
+**Mislead screenreaders** into changing how they announce content or into forgetting the underlying semantics of your page — **one CSS rule at a time.** Behold, the chaos that can be caused with just a single `list-style: none` or a `text-transform: uppercase`! We'll challenge the separation of presentation and content, go on a tour through browser and operating system internals, and learn how our page is exposed to assistive technology. **You won't want to miss this one.**
 
 Ben Myers is a frontend developer with a passion for accessibility. He is a Software Engineer II at USAA's bank. He blogs about web accessibility at [benmyers.dev](https://benmyers.dev), and is about to start [streaming about accessibility and semantics on Twitch](https://twitch.tv/SomeAnticsDev)! You can find him on Twitter at [@BenDMyers](https://twitter.com/bendmyers).
 
