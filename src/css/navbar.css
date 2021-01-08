@@ -1,0 +1,23 @@
+#navbar {
+	width: 100%;
+	background-color: black;
+	padding: 1%;
+	margin-bottom: 1.5em;
+}
+
+#navbar a {
+	color: white;
+	font-weight: 900;
+	text-decoration: none;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 24pt;
+}
+
+#navbar a:hover {
+	color: gold;
+}
+
+#navbar a:focus {
+	outline: 2px solid gold;
+	outline-offset: 0.3em;
+}
