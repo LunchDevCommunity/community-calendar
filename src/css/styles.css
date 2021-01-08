@@ -39,3 +39,45 @@ p code {
 	font-family: 'Source Code Pro', monospace;
 	font-style: italic;
 }
+
+aside {
+	background-color: lightgoldenrodyellow;
+	border-left: 3px solid gold;
+	padding: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+aside > * + * {
+	margin-top: 1.5em;
+}
+
+.cta-links {
+	text-align: right;
+}
+
+.cta-links a {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	background-color: white;
+	border-radius: 5%;
+	border: 2px solid gold;
+	padding: 2%;
+	display: inline-block;
+	margin-left: 0.5em;
+}
+
+.cta-links a:active {
+	transform: scaleX(0.95);
+}
+
+.cta-links a:hover {
+	background-color: whitesmoke;
+}
+
+.cta-links a:focus {
+	background-color: whitesmoke;
+	border-color: goldenrod;
+	outline: 3px solid transparent;
+}
