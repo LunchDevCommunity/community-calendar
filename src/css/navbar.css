@@ -18,6 +18,10 @@
 }
 
 #navbar a:focus {
+	color: gold;
+}
+
+#navbar a:focus-visible {
 	outline: 2px solid gold;
 	outline-offset: 0.3em;
 }
