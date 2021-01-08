@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Source+Code+Pro:ital,wght@0,400;0,600;1,500;1,600&display=swap" rel="stylesheet">
     <title>{{ title }}{% if type %}, {{type}}{% endif %} | Lunch.dev Community Calendar</title>
   </head>
   <body data-typeface="system-ui">
+	{% include partials/header.html %}
     <div data-layout="centered-single-column">
-      {% include partials/header.html %}
       <main>
-        <h1>{{ title }}</h1>
-        {% if speakers %}
-        <ul>
-          {% for speaker in speakers %}
-          <li>{{ speaker }}</li>
-          {% endfor %}
-        </ul>
-        {% endif %} {{ content }}
+		<h1>{{ title }}</h1>
+		<small>
+			{% if speakers %}
+			{{ speakers | join: ', ' }} &middot; 
+			{% endif %}
+			{{ date }}
+		</small>
+        {{ content }}
         <p>Join this event <a href="https://discord.com/invite/q9ZdBgP">in Discord</a></p>
       </main>
     </div>
