@@ -20,6 +20,7 @@ module.exports = (eleventyConfig) => {
 
   let markdown = markdownIt({
     typographer: true,
+    html: true,
   });
 
   markdown.use(emoji);

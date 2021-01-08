@@ -10,14 +10,21 @@
   <body data-typeface="system-ui">
     <main data-layout="centered-single-column">
       <h1>Lunch.dev Community Calendar</h1>
-      <ul>
+
+      <h2 id="upcoming-events-section">Upcoming Events</h2>
+      <ul aria-labelledby="upcoming-events-section">
         {% for event in collections.upcomingEvents %} {{ event | log }}
         <li>
           <a href="{{ event.url }}"> {{ event.data.title }} </a>
+          {% if event.data.type %}
+          <span>{{ event.data.type }}</span>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
-      <ul>
+
+      <h2 id="past-events-section">Past Events</h2>
+      <ul aria-labelledby="past-events-section">
         {% for event in collections.pastEvents %} {{ event | log }}
         <li>
           <a href="{{ event.url }}"> {{ event.data.title }} </a>
