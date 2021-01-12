@@ -1,6 +1,6 @@
 ---
 title: Eleventy at 11
-date: 2020-12-14 17:00:00
+date: 2020-12-14T14:00:00-05:00
 speakers:
   - Robb Schuneman
   - chantastic
