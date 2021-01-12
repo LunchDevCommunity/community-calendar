@@ -43,9 +43,26 @@ h1 {
 	font-size: 40pt;
 }
 
+main > h2 {
+	font-size: 28pt;
+}
+
+main > h3 {
+	font-size: 20pt;
+}
+
+aside > h2,
+aside > h3 {
+	font-size: 24px;
+}
+
 code {
 	font-family: 'Source Code Pro', monospace;
 	font-style: italic;
+}
+
+main li + li {
+	margin-top: 1.5em;
 }
 
 aside {
