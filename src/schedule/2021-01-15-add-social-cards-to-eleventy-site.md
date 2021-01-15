@@ -23,4 +23,10 @@ We'll be learning too! So, no previous experience required just bring your curio
 
 ## Helpful Links
 
+- [Community calendar repo](https://github.com/LunchDevCommunity/community-calendar)
 - [Automatically Generate Social Images for Blog Posts](https://www.learnwithjason.dev/blog/auto-generate-social-image/)
+- [Twitter Cards docs](https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- [Eleventy's Data Cascade](https://www.11ty.dev/docs/data-cascade/)
+- [Cloudinary](https://cloudinary.com/)
+- [Publix Subs](https://ww4.publix.com/products-services/deli/online-easy-ordering)
