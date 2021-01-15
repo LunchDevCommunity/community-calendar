@@ -26,7 +26,7 @@
           {% if event.data.type %}
           <div>{{ event.data.type }}</div>
           {% endif %}
-          <a href="{{ event.url }}" aria-label="View Details for '{{ event.data.title }}'">View Details &#8250;</a>
+          <a href="{{ event.url }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
         </article>
         {% endfor %}
       </section>
