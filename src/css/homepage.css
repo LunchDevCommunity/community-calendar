@@ -1,0 +1,43 @@
+.events-section {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+.event-item {
+	position: relative;
+	width: calc(50% - 40px);
+	min-height: 140px;
+	margin: 16px;
+	padding: 16px;
+	box-shadow: #0000001c 0px 0.3px 0.9px, rgba(0, 0, 0, 0.11) 0px 1.6px 3.6px;
+}
+
+.event-item div {
+	color: #78757f;
+	font-style: italic;
+}
+
+.event-item a {
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	padding: 4px 8px;
+	border-radius: 8px;
+}
+
+.event-item a:hover {
+	opacity: 0.8;
+}
+
+#upcoming-events-section .event-item a {
+	background-color: #2a9d8f;
+}
+
+#past-events-section .event-item a {
+	background-color: #8d99ae;
+}

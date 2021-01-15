@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Source+Code+Pro:ital,wght@0,400;0,600;1,500;1,600&display=swap" rel="stylesheet">
-    <title>Lunch.dev Community Calendar</title>
-  </head>
-  <body data-typeface="system-ui">
-	{% include partials/header.html %}
-    <main data-layout="centered-single-column">
-      <h1>Lunch.dev Community Calendar</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="/css/navbar.css" />
+		<link rel="stylesheet" href="/css/homepage.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Source+Code+Pro:ital,wght@0,400;0,600;1,500;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Lunch.dev Community Calendar</title>
+	</head>
 
-      <h2 id="upcoming-events-section">Upcoming Events</h2>
-      <ul aria-labelledby="upcoming-events-section">
-        {% for event in collections.upcomingEvents %} {{ event | log }}
-        <li>
-          <a href="{{ event.url }}"> {{ event.data.title }} </a>
-          {% if event.data.type %}
-          <span>{{ event.data.type }}</span>
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
+	<body data-typeface="system-ui">
+		{% include partials/header.html %}
 
-      <h2 id="past-events-section">Past Events</h2>
-      <ul aria-labelledby="past-events-section">
-        {% for event in collections.pastEvents %} {{ event | log }}
-        <li>
-          <a href="{{ event.url }}"> {{ event.data.title }} </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </main>
-  </body>
+		<main data-layout="centered-single-column">
+			<h2>Upcoming Events</h2>
+			<section id="upcoming-events-section" class="events-section">
+				{% for event in collections.upcomingEvents %} {{ event | log }}
+				<article class="event-item">
+					<h3>{{ event.data.title }}</h3>
+					{% if event.data.type %}
+					<div>{{ event.data.type }}</div>
+					{% endif %}
+					<a href="{{ event.url }}">View Details &#8250;</a>
+				</article>
+				{% endfor %}
+			</section>
+
+			<h2>Past Events</h2>
+			<section id="past-events-section" class="events-section">
+				{% for event in collections.pastEvents %} {{ event | log }}
+				<article class="event-item">
+					<h3>{{ event.data.title }}</h3>
+					{% if event.data.type %}
+					<div>{{ event.data.type }}</div>
+					{% endif %}
+					<a href="{{ event.url }}">View Details &#8250;</a>
+				</article>
+				{% endfor %}
+			</section>
+		</main>
+	</body>
 </html>
