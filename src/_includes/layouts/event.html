@@ -15,6 +15,7 @@
     <meta property="description" content="{% if description %}{{description}}{% endif %}" />
     <meta property="og:title" content="{{ title }}{% if type %}, {{type}}{% endif %} | Lunch.dev Community Calendar" />
     <meta property="og:description" content="{{ date }} — {% if description %}{{description}}{% endif %}" />
+    <meta property="og:type" content="article" />
   </head>
   <body data-typeface="system-ui">
     {% include partials/header.html %}
