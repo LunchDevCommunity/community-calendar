@@ -23,9 +23,11 @@
 				{% for event in collections.upcomingEvents %} {{ event | log }}
 				<article aria-labelledby="{{ event.data.title | slug }}" class="event-item">
 					<h3 id="{{ event.data.title | slug }}">{{ event.data.title }}</h3>
-					{% if event.data.type %}
-					<p class="fg1 block subtitle">{{ event.data.type }} &middot; {{ event.data.date || asDateTime }}</p>
-					{% endif %}
+
+					<p class="fg1 block subtitle">
+						{% if event.data.type %}{{ event.data.type }} &middot; {% endif %} {{ event.data.date || asDateTime }}
+					</p>
+
 					<a href="{{ event.url }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
 				</article>
 				{% endfor %}
@@ -36,10 +38,9 @@
 				{% for event in collections.pastEvents %} {{ event | log }}
 				<article aria-labelledby="{{ event.data.title | slug }}" class="event-item">
 					<h3 id="{{ event.data.title | slug }}">{{ event.data.title }}</h3>
-					{% if event.data.type %}
-					<div>{{ event.data.type }}</div>
-					{% endif %}
-					<p>{{ event.data.date }}</p>
+					<p class="fg1 block subtitle">
+						{% if event.data.type %}{{ event.data.type }} &middot; {% endif %} {{ event.data.date || asDateTime }}
+					</p>
 					<a href="{{ event.url }}" aria-label="View Details for '{{ event.data.title }}'">View Details &#8250;</a>
 				</article>
 				{% endfor %}
