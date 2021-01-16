@@ -1,32 +1,32 @@
 #navbar {
-  width: 100%;
-  background-color: black;
-  margin-bottom: 1.5em;
-  text-align: center;
+	width: 100%;
+	background-color: black;
+	margin-bottom: 1.5em;
+	text-align: center;
 }
 
 #navbar a {
-  color: white;
-  font-weight: 900;
-  text-decoration: none;
-  font-family: 'Alegreya Sans', sans-serif;
+	color: white;
+	font-weight: 900;
+	text-decoration: none;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
 #navbar a:hover {
-  color: gold;
+	color: gold;
 }
 
 #navbar a:focus {
-  color: gold;
+	color: gold;
 }
 
 #navbar a:focus-visible {
-  outline: 2px solid gold;
-  outline-offset: 0.3em;
+	outline: 2px solid gold;
+	outline-offset: 0.3em;
 }
 
 #navbar h1 {
-  margin: 0;
-  font-size: 24pt;
-  padding: 8px 0;
+	margin: 0;
+	font-size: 24pt;
+	padding: 8px 0;
 }

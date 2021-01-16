@@ -1,42 +1,42 @@
 [data-typeface='system-ui'] {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
-    sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+		sans-serif;
 }
 
 /* TODO: consider more advanced Grid layout
  * https://www.joshwcomeau.com/css/full-bleed/
  */
 :root {
-  --pageContentWidth: 72ch;
-  --mainPadding: calc(100% - var(--pageContentWidth));
+	--pageContentWidth: 72ch;
+	--mainPadding: calc(100% - var(--pageContentWidth));
 }
 
 [data-layout='centered-single-column'] {
-  padding: 0 calc(var(--mainPadding) / 2);
+	padding: 0 calc(var(--mainPadding) / 2);
 }
 
 [data-responsive-youtube--container] {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  margin: 1em 0;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin: 1em 0;
 }
 
 [data-responsive-youtube--container] > iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 main > * + * {
-  margin-top: 1.5em;
+	margin-top: 1.5em;
 }
 
 main:last-child {
-  margin-bottom: 3.2em;
+	margin-bottom: 3.2em;
 }
 
 h1,
@@ -45,72 +45,72 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
 h1 {
-  font-size: 40pt;
+	font-size: 40pt;
 }
 
 main > h2 {
-  font-size: 28pt;
+	font-size: 28pt;
 }
 
 main > h3 {
-  font-size: 20pt;
+	font-size: 20pt;
 }
 
 aside > h2,
 aside > h3 {
-  font-size: 24px;
+	font-size: 24px;
 }
 
 code {
-  font-family: 'Source Code Pro', monospace;
-  font-style: italic;
+	font-family: 'Source Code Pro', monospace;
+	font-style: italic;
 }
 
 main li + li {
-  margin-top: 1.5em;
+	margin-top: 1.5em;
 }
 
 aside {
-  background-color: lightgoldenrodyellow;
-  border-left: 3px solid gold;
-  padding: 3%;
-  margin: 3em 1.5em;
+	background-color: lightgoldenrodyellow;
+	border-left: 3px solid gold;
+	padding: 3%;
+	margin: 3em 1.5em;
 }
 
 aside > * + * {
-  margin-top: 1.5em;
+	margin-top: 1.5em;
 }
 
 .cta-links {
-  text-align: right;
+	text-align: right;
 }
 
 .cta-links a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  background-color: white;
-  border-radius: 5%;
-  border: 2px solid gold;
-  padding: 2%;
-  display: inline-block;
-  margin-left: 0.5em;
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	background-color: white;
+	border-radius: 5%;
+	border: 2px solid gold;
+	padding: 2%;
+	display: inline-block;
+	margin-left: 0.5em;
 }
 
 .cta-links a:active {
-  transform: scaleX(0.95);
+	transform: scaleX(0.95);
 }
 
 .cta-links a:hover {
-  background-color: whitesmoke;
+	background-color: whitesmoke;
 }
 
 .cta-links a:focus {
-  background-color: whitesmoke;
-  border-color: goldenrod;
-  outline: 3px solid transparent;
+	background-color: whitesmoke;
+	border-color: goldenrod;
+	outline: 3px solid transparent;
 }
