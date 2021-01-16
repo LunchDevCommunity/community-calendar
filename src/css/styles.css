@@ -1,41 +1,50 @@
 [data-typeface='system-ui'] {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
-    sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+		sans-serif;
 }
 
 /* TODO: consider more advanced Grid layout
  * https://www.joshwcomeau.com/css/full-bleed/
  */
 :root {
-  --pageContentWidth: 60ch;
-  --mainPadding: calc(100% - var(--pageContentWidth));
+	--pageContentWidth: 72ch;
+	--mainPadding: calc(100% - var(--pageContentWidth));
 }
 
 [data-layout='centered-single-column'] {
-  padding: 0 calc(var(--mainPadding) / 2);
+	padding: 0 calc(var(--mainPadding) / 2);
 }
 
 [data-responsive-youtube--container] {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  margin: 1em 0;
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin: 1em 0;
 }
 
 [data-responsive-youtube--container] > iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 main > * + * {
 	margin-top: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+main:last-child {
+	margin-bottom: 3.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Alegreya Sans', sans-serif;
 }
 
