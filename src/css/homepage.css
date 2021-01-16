@@ -7,7 +7,7 @@
 
 .event-item {
 	position: relative;
-	width: calc(50% - 40px);
+	width: calc(50% - 32px);
 	min-height: 140px;
 	margin: 16px;
 	padding: 16px;
@@ -41,4 +41,20 @@
 
 #past-events-section .event-item a {
 	background-color: #495057;
+}
+
+@media screen and (max-width: 768px) {
+	.events-title {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.events-section {
+		flex-direction: column;
+	}
+
+	.event-item {
+		width: calc(100% - 32px);
+	}
 }
