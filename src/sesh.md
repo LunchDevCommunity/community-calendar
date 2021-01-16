@@ -15,12 +15,11 @@ Whenever someone sets up an event, Sesh posts a big message that looks something
 
 Sesh reacts to its own message with three emojis: ✅, 🕐, and 📝. **You can click these reactions to RSVP or to get a personalized timezone conversion.**
 
-* **✅:** Click this reaction to **provide your RSVP** for the event. Sesh will privately message you to set up (optional) reminders for the event. If the event organizer changes any details, Sesh will notify you. If you want to unRSVP, click the ✅ emote again.
+- **✅:** Click this reaction to **provide your RSVP** for the event. Sesh will privately message you to set up (optional) reminders for the event. If the event organizer changes any details, Sesh will notify you. If you want to unRSVP, click the ✅ emote again.
 
-* **🕐:** When you click this reaction, Sesh will privately message you the event's time in **your personal timezone.** This requires you to set up your timezone with Sesh — the bot will walk you through setting your timezone in your direct messages.
+- **🕐:** When you click this reaction, Sesh will privately message you the event's time in **your personal timezone.** This requires you to set up your timezone with Sesh — the bot will walk you through setting your timezone in your direct messages.
 
-* **📝:** Click this reaction to **edit your event.** You can only do this if you created the event, or if you're a server admin.
-
+- **📝:** Click this reaction to **edit your event.** You can only do this if you created the event, or if you're a server admin.
 
 ## Creating and Managing Sesh Events
 
@@ -28,9 +27,9 @@ So you'd like to organize an event! That's great! Once you've figured out when i
 
 To create a Sesh event, you'll want to go to **#live-event-text** or whichever channel is the most appropriate and use the `!create` command. Here are a few examples of `!create` commands you could use:
 
-* `!create React Podcast Listening Party on January 27 at 12pm PST`
-* `!create Rust Book Club on Wednesday at 7pm`
-* `!create Building an Eleventy Community Calendar tomorrow 11am to 12:30pm`
+- `!create React Podcast Listening Party on January 27 at 12pm PST`
+- `!create Rust Book Club on Wednesday at 7pm`
+- `!create Building an Eleventy Community Calendar tomorrow 11am to 12:30pm`
 
 There are probably other things you could do — the natural language processing on these commands seems pretty intuitive.
 
