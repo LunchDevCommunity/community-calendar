@@ -53,7 +53,7 @@ module.exports = (eleventyConfig) => {
 	});
 
 	eleventyConfig.addFilter('asDateTime', function (date) {
-		return format(new Date(date), 'Pp');
+		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
 	});
 
 	return {
