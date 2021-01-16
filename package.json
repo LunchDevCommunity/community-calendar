@@ -7,7 +7,8 @@
   "scripts": {
     "build": "eleventy",
     "dev": "eleventy --serve",
-    "format": "prettier --write \"src/**/*.md\""
+    "format": "prettier --write \"src/**/*.md\"",
+    "gen": "node ./cli"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
@@ -16,7 +17,11 @@
     "markdown-it-emoji": "^2.0.0"
   },
   "devDependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.2.1",
     "husky": "^4.3.6",
+    "inquirer": "^7.3.3",
+    "node-emoji": "^1.10.0",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0"
   },

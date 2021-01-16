@@ -1,7 +1,7 @@
 ---
 title: Hijacking Screenreaders with CSS
 type: Talk
-date: 2021-01-19 18:00:00
+date: 2021-01-19T13:00:00-05:00
 speakers:
   - Ben Myers
 ---

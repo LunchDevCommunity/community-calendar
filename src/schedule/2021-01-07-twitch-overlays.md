@@ -1,7 +1,7 @@
 ---
 title: Building Twitch Overlays Using Web Technology
 type: Talk
-date: 2021-01-07
+date: 2021-01-07T14:00:00-05:00
 speakers:
   - Ben Myers
 ---
