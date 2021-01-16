@@ -2,7 +2,7 @@
 title: Add Social Cards to an Eleventy Site
 description: We'll be adding them to the Eleventy site but the knowledge is totally transferrable to other places on the web.
 type: Mob Job
-date: 2021-01-19 18:00:00
+date: 2021-01-15 18:00:00
 speakers:
   - chantastic
 ---
