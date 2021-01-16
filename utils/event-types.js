@@ -1,1 +1,1 @@
-module.exports = ['Talk', 'Episode Party'];
+module.exports = ['Talk', 'Episode Party', 'Mob Job'];

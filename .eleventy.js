@@ -10,51 +10,55 @@ const { isAfter, isBefore, isToday, format } = require('date-fns');
 // Note: we make sure the parsed date is valid, then check the actual raw input format to make sure we have consistency
 const dateFormatRegex = /(date:)\s[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\+|\-)[0-9]{2}:[0-9]{2}/gm;
 const isValidDate = (date, rawInputContent) =>
-  !Number.isNaN(Date.parse(date)) && rawInputContent.match(dateFormatRegex);
+	!Number.isNaN(Date.parse(date)) && rawInputContent.match(dateFormatRegex);
 const isValidTitle = (title = '') => title.trim().length > 2;
 const isValidEvent = (event) =>
-  isValidTitle(event.data.title) && isValidDate(event.data.date, event.template.inputContent);
+	isValidTitle(event.data.title) && isValidDate(event.data.date, event.template.inputContent);
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addCollection('events', (collectionApi) => {
-    return collectionApi.getFilteredByGlob('./src/schedule/*.md');
-  });
-  eleventyConfig.addCollection('pastEvents', (collectionApi) => {
-    return collectionApi
-      .getFilteredByGlob('./src/schedule/*.md')
-      .filter((event) => isValidEvent(event) && isBefore(new Date(event.data.date), new Date()));
-  });
-  eleventyConfig.addCollection('upcomingEvents', (collectionApi) => {
-    // We include `isToday` assuming that a daily build job is ran at 12:01am,
-    // and we're okay with a daily event potentially showing even if it's in the past
+	eleventyConfig.addCollection('events', (collectionApi) => {
+		return collectionApi.getFilteredByGlob('./src/schedule/*.md');
+	});
+	eleventyConfig.addCollection('pastEvents', (collectionApi) => {
+		return collectionApi
+			.getFilteredByGlob('./src/schedule/*.md')
+			.filter((event) => isValidEvent(event) && isBefore(new Date(event.data.date), new Date()));
+	});
+	eleventyConfig.addCollection('upcomingEvents', (collectionApi) => {
+		// We include `isToday` assuming that a daily build job is ran at 12:01am,
+		// and we're okay with a daily event potentially showing even if it's in the past
 
-    return collectionApi
-      .getFilteredByGlob('./src/schedule/*.md')
-      .filter(
-        (event) =>
-          isValidEvent(event) && (isAfter(new Date(event.data.date), new Date()) || isToday(new Date(event.data.date)))
-      );
-  });
+		return collectionApi
+			.getFilteredByGlob('./src/schedule/*.md')
+			.filter(
+				(event) =>
+					isValidEvent(event) && (isAfter(new Date(event.data.date), new Date()) || isToday(new Date(event.data.date)))
+			);
+	});
 
-  let markdown = markdownIt({
-    typographer: true,
-    html: true,
-  });
+	let markdown = markdownIt({
+		typographer: true,
+		html: true,
+	});
 
-  markdown.use(emoji);
+	markdown.use(emoji);
 
-  eleventyConfig.setLibrary('md', markdown);
+	eleventyConfig.setLibrary('md', markdown);
 
-  eleventyConfig.addPassthroughCopy('src/assets');
-  eleventyConfig.addPassthroughCopy('src/css');
+	eleventyConfig.addPassthroughCopy('src/assets');
+	eleventyConfig.addPassthroughCopy('src/css');
 
-  eleventyConfig.addFilter('asDateOnly', function (date) {
-    return format(new Date(date), 'PP');
-  });
+	eleventyConfig.addFilter('asDateOnly', function (date) {
+		return format(new Date(date), 'PP');
+	});
 
-  return {
-    dir: {
-      input: './src/',
-    },
-  };
+	eleventyConfig.addFilter('asDateTime', function (date) {
+		return format(new Date(date), 'Pp');
+	});
+
+	return {
+		dir: {
+			input: './src/',
+		},
+	};
 };
