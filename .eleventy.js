@@ -1,7 +1,11 @@
 const markdownIt = require('markdown-it');
 const emoji = require('markdown-it-emoji');
+const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier');
 
 const { isAfter, isBefore, isToday, format } = require('date-fns');
+
+const isProduction = process.env.NODE_ENV || false;
+// It's value taken in scripts(package.json) returned strings 'development' or 'production'
 
 // Some helpers to make sure our event frontmatter is :100:
 // Make events have an eleventy and js-yaml-friendly standardized date format of:
@@ -55,6 +59,10 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('asDateTime', function (date) {
 		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
 	});
+
+	if (isProduction === 'production') {
+		eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
+	}
 
 	return {
 		dir: {
