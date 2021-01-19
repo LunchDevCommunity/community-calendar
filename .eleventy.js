@@ -4,7 +4,7 @@ const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minif
 
 const { isAfter, isBefore, isToday, format } = require('date-fns');
 
-const isProduction = process.env.NODE_ENV || false;
+const isProduction = process.env.NODE_ENV === 'production';
 // It's value taken in scripts(package.json) returned strings 'development' or 'production'
 
 // Some helpers to make sure our event frontmatter is :100:
@@ -12,6 +12,7 @@ const isProduction = process.env.NODE_ENV || false;
 // date: 2021-01-11T21:00:00-08:00
 // See: https://www.11ty.dev/docs/dates/#setting-a-content-date-in-front-matter
 // Note: we make sure the parsed date is valid, then check the actual raw input format to make sure we have consistency
+
 const dateFormatRegex = /(date:)\s[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\+|\-)[0-9]{2}:[0-9]{2}/gm;
 const isValidDate = (date, rawInputContent) =>
 	!Number.isNaN(Date.parse(date)) && rawInputContent.match(dateFormatRegex);
@@ -60,7 +61,7 @@ module.exports = (eleventyConfig) => {
 		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
 	});
 
-	if (isProduction === 'production') {
+	if (isProduction) {
 		eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 	}
 
