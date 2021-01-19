@@ -6,7 +6,7 @@ date: 2021-01-20T10:00:00-08:00
 
 [chantastic](https://twitter.com/home) and the Lunch Dev crew add YouTube and Twitter shortcodes to [events.lunch.dev](https://events.lunch.dev).
 
-The goal: instead of copying-pasting large embed codes into markdown files, new posts can use shortcodes like `{% youtube 'https://youtu.be/S0M31D' %}` and `{% twitter 'htttps;//twitter.com/status/4815162342 %}` and take advantage of responsive container styles.
+The goal: instead of copying-pasting large embed codes into markdown files, new posts can use shortcodes like `youtube` and `twitter` with a content url to add rich, embedded content.
 
 ## References
 
