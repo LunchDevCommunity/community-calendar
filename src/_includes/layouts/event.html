@@ -30,7 +30,7 @@
 			<main class="events-page">
 				<h1>{{ title }}</h1>
 				<small> {% if speakers %} {{ speakers | join: ', ' }} &middot; {% endif %} {{ date }} </small>
-				{% include partials/add-to-cal.html %} {{ content }}
+				{{ addToCalendarList }} {{ content }}
 				<p>Join this event <a href="https://discord.com/invite/q9ZdBgP">in Discord</a></p>
 			</main>
 		</div>
