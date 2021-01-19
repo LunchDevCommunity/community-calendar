@@ -30,3 +30,4 @@ Ben Myers is a frontend developer with a passion for accessibility. He is a Soft
 - [Table heuristics in the Chromium source code](https://chromium.googlesource.com/chromium/blink/+/master/Source/modules/accessibility/AXTable.cpp)
 - [Table heuristics in the Firefox source code](https://dxr.mozilla.org/mozilla-central/source/accessible/generic/TableAccessible.cpp)
 - ["Tables, CSS Display Properties, and ARIA"](https://adrianroselli.com/2018/02/tables-css-display-properties-and-aria.html) by Adrian Roselli
+- [James Craig's thread on WebKit and lists](https://twitter.com/cookiecrook/status/1337226933822603270)
