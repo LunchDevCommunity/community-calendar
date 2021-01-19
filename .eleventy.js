@@ -5,7 +5,7 @@ const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minif
 const { isAfter, isBefore, isToday, format } = require('date-fns');
 
 const isProduction = process.env.NODE_ENV === 'production';
-// It's value taken in scripts(package.json) returned strings 'development' or 'production'
+// It's value taken in scripts(package.json) returned boolean
 
 // Some helpers to make sure our event frontmatter is :100:
 // Make events have an eleventy and js-yaml-friendly standardized date format of:
