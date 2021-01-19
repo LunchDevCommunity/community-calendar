@@ -1,4 +1,4 @@
 {
-	"layout": "layouts/event.html",
+	"layout": "layouts/event.11ty.js",
 	"permalink": "/{{ page.fileSlug }}/"
 }
