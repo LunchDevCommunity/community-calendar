@@ -19,6 +19,8 @@ speakers:
 
 Ben Myers is a frontend developer with a passion for accessibility. He is a Software Engineer II at USAA's bank. He blogs about web accessibility at [benmyers.dev](https://benmyers.dev), and is about to start [streaming about accessibility and semantics on Twitch](https://twitch.tv/SomeAnticsDev)! You can find him on Twitter at [@BenDMyers](https://twitter.com/bendmyers).
 
+{% youtube-video 'https://youtu.be/OYVxsWCE7rE' %}
+
 ## Helpful Links
 
 - [Get the slides!](https://benmyers.dev/assets/slides/Hijacking%20Screenreaders%20with%20CSS%20-%20ReactJS%20Dallas.pptx)

@@ -61,6 +61,19 @@ module.exports = (eleventyConfig) => {
 		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
 	});
 
+	eleventyConfig.addShortcode('youtube-video', function (url) {
+		function getId(url) {
+			const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+			const match = url.match(regExp);
+
+			return match && match[2].length === 11 ? match[2] : null;
+		}
+
+		return `<div data-responsive-youtube--container>
+			<iframe src="//www.youtube.com/embed/${getId(url)}" frameborder="0" allowfullscreen></iframe>
+		</div>`;
+	});
+
 	if (isProduction) {
 		eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 	}
