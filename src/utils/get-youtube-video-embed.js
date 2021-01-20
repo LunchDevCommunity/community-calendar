@@ -1,10 +1,10 @@
-module.exports = function (url) {
+module.exports = function getYouTubeVideoEmbed(url) {
 	return `<div data-responsive-youtube--container>
-    <iframe src="//www.youtube.com/embed/${getVideoIdFromURL(url)}" frameborder="0" allowfullscreen></iframe>
+    <iframe src="//www.youtube.com/embed/${getVideoIdFromYouTubeURL(url)}" frameborder="0" allowfullscreen></iframe>
   </div>`;
 };
 
-function getVideoIdFromURL(url) {
+function getVideoIdFromYouTubeURL(url) {
 	let regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
 	let match = url.match(regExp);
 
