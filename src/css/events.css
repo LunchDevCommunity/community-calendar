@@ -1,0 +1,21 @@
+.events-page .add-to-calendar {
+	list-style: none;
+	margin: 10px 0 15px 0;
+	padding: 0;
+	display: flex;
+}
+
+.events-page .add-to-calendar li {
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 8px;
+}
+
+.events-page .add-to-calendar li svg {
+	width: 20px;
+	fill: dimgray;
+}
+
+.events-page .add-to-calendar li svg:hover {
+	fill: black;
+}
