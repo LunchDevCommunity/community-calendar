@@ -17,9 +17,7 @@ In this event, we covered:
 - Using <abbr title="Document Object Model">DOM</abbr> manipulation to display chat messages
 - Using `overflow` and flexbox in CSS to get the rising chatbox feel
 
-<div data-responsive-youtube--container>
-<iframe src="https://www.youtube.com/embed/aJiIF9I6fuc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% youtube-video 'https://youtu.be/aJiIF9I6fuc' %}
 
 ## Mentioned Resources
 
