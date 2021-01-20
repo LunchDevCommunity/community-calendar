@@ -9,7 +9,7 @@ module.exports = {
 				return;
 			}
 
-			let event = { title: data.title, description: data.description, start: data.date, duration: [1, 'hour'] };
+			let event = { title, description, start, duration: [1, 'hour'] };
 
 			return `
 			<div>
