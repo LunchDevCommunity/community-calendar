@@ -4,7 +4,7 @@ const { isBefore } = require('date-fns');
 
 module.exports = {
 	eleventyComputed: {
-		addToCalendarList: (data) => {
+		addToCalendarList: ({ title, description, date: start })) => {
 			if (isBefore(new Date(data.date), new Date())) {
 				return;
 			}
