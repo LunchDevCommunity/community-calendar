@@ -1,6 +1,7 @@
 const markdownIt = require('markdown-it');
 const emoji = require('markdown-it-emoji');
 const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier');
+const getYouTubeVideoEmbed = require('./src/utils/get-youtube-video-embed');
 
 const { isAfter, isBefore, isToday, format } = require('date-fns');
 
@@ -60,6 +61,8 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('asDateTime', function (date) {
 		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
 	});
+
+	eleventyConfig.addShortcode('youtube-video', getYouTubeVideoEmbed);
 
 	if (isProduction) {
 		eleventyConfig.addPlugin(eleventyPluginFilesMinifier);

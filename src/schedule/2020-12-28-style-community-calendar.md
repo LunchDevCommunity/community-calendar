@@ -7,9 +7,7 @@ Join us as we add CSS to our [Eleventy](https://11ty.dev)-based [community calen
 
 Check out [our pull request](https://github.com/LunchDevCommunity/community-calendar/pull/10)!
 
-<div data-responsive-youtube--container>
-<iframe src="https://www.youtube.com/embed/M4moKmALiMQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% youtube-video 'https://www.youtube.com/watch?v=M4moKmALiMQ&feature=emb_title' %}
 
 ## Shared Links
 

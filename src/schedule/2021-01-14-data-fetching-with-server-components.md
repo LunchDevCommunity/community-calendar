@@ -8,6 +8,8 @@ Before the holidays, the React Core [announced React Server Components](https://
 
 We'll watch and discuss this talk as a group.
 
-<div data-responsive-youtube--container>
-  <iframe src="https://www.youtube.com/embed/TQQPAU21ZUw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% youtube-video 'https://youtu.be/TQQPAU21ZUw' %}
+
+## Resources
+
+- [React Server Components Announcement Notes — chan.dev](https://chan.dev/posts/react-server-components-announcement-notes/)
