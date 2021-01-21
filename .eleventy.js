@@ -36,10 +36,7 @@ module.exports = (eleventyConfig) => {
 
 		return collectionApi
 			.getFilteredByGlob('./src/schedule/*.md')
-			.filter(
-				(event) =>
-					isValidEvent(event) && (isAfter(new Date(event.data.date), new Date()) || isToday(new Date(event.data.date)))
-			);
+			.filter((event) => isValidEvent(event) && isAfter(new Date(event.data.date), new Date()));
 	});
 
 	let markdown = markdownIt({
