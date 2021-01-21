@@ -9,6 +9,11 @@ module.exports = function getYouTubeVideoEmbed(url) {
   </div>`;
 };
 
+/**
+ * Extracts a YouTube video's ID from its upload URL.
+ * @param {string} url URL of the YouTube upload
+ * @returns {string} the YouTube video's ID
+ */
 function getVideoIdFromYouTubeURL(url) {
 	let regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
 	let match = url.match(regExp);
