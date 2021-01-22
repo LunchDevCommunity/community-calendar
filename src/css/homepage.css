@@ -54,6 +54,10 @@
 	outline-width: 2px;
 }
 
+.event-item a:active {
+	transform: scaleX(0.95);
+}
+
 #upcoming-events-section .event-item a {
 	background-color: gold;
 	color: black;
