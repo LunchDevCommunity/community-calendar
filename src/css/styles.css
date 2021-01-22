@@ -11,6 +11,10 @@
 	--mainPadding: calc(100% - var(--pageContentWidth));
 }
 
+body {
+	background-color: #f5f5f5;
+}
+
 [data-layout='centered-single-column'] {
 	padding: 0 calc(var(--mainPadding) / 2);
 }
