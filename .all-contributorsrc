@@ -60,6 +60,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "roman-bytes",
+      "name": "Jacob Roman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4601329?v=4",
+      "profile": "https://romanbytes.dev/",
+      "contributions": [
+        "code",
+        "eventOrganizing"
+      ]
     }
   ],
   "contributorsSortAlphabetically": true,
