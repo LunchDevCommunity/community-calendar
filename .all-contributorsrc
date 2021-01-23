@@ -14,12 +14,40 @@
         "code",
         "tool"
       ]
+    },
+    {
+      "login": "chantastic",
+      "name": "Michael Chan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/658360?v=4",
+      "profile": "http://twitter.com/chantastic",
+      "contributions": [
+        "code",
+        "content",
+        "eventOrganizing",
+        "projectManagement",
+        "video"
+      ]
+    },
+    {
+      "login": "BenDMyers",
+      "name": "Ben Myers",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18060369?v=4",
+      "profile": "https://github.com/BenDMyers",
+      "contributions": [
+        "a11y",
+        "code",
+        "content",
+        "eventOrganizing",
+        "projectManagement"
+      ]
     }
   ],
+  "contributorsSortAlphabetically": true,
   "contributorsPerLine": 7,
   "projectName": "community-calendar",
   "projectOwner": "LunchDevCommunity",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "none"
 }

@@ -8,7 +8,8 @@
 		"build": "cross-env NODE_ENV=production eleventy",
 		"dev": "cross-env NODE_ENV=development eleventy --serve",
 		"format": "prettier --write \"src/**/*.md\"",
-		"gen": "node ./cli"
+		"gen": "node ./cli",
+		"recognize": "all-contributors add"
 	},
 	"dependencies": {
 		"@11ty/eleventy": "^0.11.1",
@@ -21,6 +22,7 @@
 	},
 	"devDependencies": {
 		"@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+		"all-contributors-cli": "^6.19.0",
 		"chalk": "^4.1.0",
 		"commander": "^6.2.1",
 		"husky": "^4.3.6",
