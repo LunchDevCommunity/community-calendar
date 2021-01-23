@@ -1,7 +1,9 @@
 # 📅 Lunch.dev Community Calendar
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Welcome to the **Lunch.dev Community Calendar**! This site shows off all of the cool things we've been doing in our [Discord community](https://https://events.lunch.dev/discord). It's built with a static site generator called [Eleventy](https://11ty.dev).
@@ -52,6 +54,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/msutkowski"><img src="https://avatars.githubusercontent.com/u/784953?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matt Sutkowski</b></sub></a><br /><a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=msutkowski" title="Code">💻</a> <a href="#tool-msutkowski" title="Tools">🔧</a></td>
     <td align="center"><a href="http://twitter.com/chantastic"><img src="https://avatars.githubusercontent.com/u/658360?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Chan</b></sub></a><br /><a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=chantastic" title="Code">💻</a> <a href="#content-chantastic" title="Content">🖋</a> <a href="#eventOrganizing-chantastic" title="Event Organizing">📋</a> <a href="#projectManagement-chantastic" title="Project Management">📆</a> <a href="#video-chantastic" title="Videos">📹</a></td>
     <td align="center"><a href="http://michaelgee.com"><img src="https://avatars.githubusercontent.com/u/17189731?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Gee</b></sub></a><br /><a href="#a11y-michaelgee22" title="Accessibility">️️️️♿️</a> <a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=michaelgee22" title="Code">💻</a> <a href="#design-michaelgee22" title="Design">🎨</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/chalkeater"><img src="https://avatars.githubusercontent.com/u/900767?v=4?s=100" width="100px;" alt=""/><br /><sub><b>chalkeater</b></sub></a><br /><a href="#eventOrganizing-chalkeater" title="Event Organizing">📋</a></td>
   </tr>
 </table>
 
