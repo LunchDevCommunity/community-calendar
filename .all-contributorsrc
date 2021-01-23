@@ -51,6 +51,15 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "Kirill-frontend",
+      "name": "Kirill-frontend",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69352064?v=4",
+      "profile": "https://github.com/Kirill-frontend",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsSortAlphabetically": true,
