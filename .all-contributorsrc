@@ -40,6 +40,17 @@
         "eventOrganizing",
         "projectManagement"
       ]
+    },
+    {
+      "login": "michaelgee22",
+      "name": "Michael Gee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17189731?v=4",
+      "profile": "http://michaelgee.com",
+      "contributions": [
+        "a11y",
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsSortAlphabetically": true,
