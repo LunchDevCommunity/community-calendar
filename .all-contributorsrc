@@ -70,6 +70,15 @@
         "code",
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "aditya28sarin",
+      "name": "Aditya Sarin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48805315?v=4",
+      "profile": "https://thetechnomaniac.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsSortAlphabetically": true,

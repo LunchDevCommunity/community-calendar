@@ -1,7 +1,7 @@
 # 📅 Lunch.dev Community Calendar
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Welcome to the **Lunch.dev Community Calendar**! This site shows off all of the cool things we've been doing in our [Discord community](https://https://events.lunch.dev/discord). It's built with a static site generator called [Eleventy](https://11ty.dev).
@@ -45,6 +45,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://thetechnomaniac.com"><img src="https://avatars.githubusercontent.com/u/48805315?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aditya Sarin</b></sub></a><br /><a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=aditya28sarin" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/BenDMyers"><img src="https://avatars.githubusercontent.com/u/18060369?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ben Myers</b></sub></a><br /><a href="#a11y-BenDMyers" title="Accessibility">️️️️♿️</a> <a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=BenDMyers" title="Code">💻</a> <a href="#content-BenDMyers" title="Content">🖋</a> <a href="#eventOrganizing-BenDMyers" title="Event Organizing">📋</a> <a href="#projectManagement-BenDMyers" title="Project Management">📆</a></td>
     <td align="center"><a href="https://romanbytes.dev/"><img src="https://avatars.githubusercontent.com/u/4601329?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jacob Roman</b></sub></a><br /><a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=roman-bytes" title="Code">💻</a> <a href="#eventOrganizing-roman-bytes" title="Event Organizing">📋</a></td>
     <td align="center"><a href="https://github.com/Kirill-frontend"><img src="https://avatars.githubusercontent.com/u/69352064?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kirill-frontend</b></sub></a><br /><a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=Kirill-frontend" title="Code">💻</a></td>
