@@ -2,7 +2,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -47,6 +47,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
+    <td align="center"><a href="https://github.com/BenDMyers"><img src="https://avatars.githubusercontent.com/u/18060369?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ben Myers</b></sub></a><br /><a href="#a11y-BenDMyers" title="Accessibility">️️️️♿️</a> <a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=BenDMyers" title="Code">💻</a> <a href="#content-BenDMyers" title="Content">🖋</a> <a href="#eventOrganizing-BenDMyers" title="Event Organizing">📋</a> <a href="#projectManagement-BenDMyers" title="Project Management">📆</a></td>
     <td align="center"><a href="https://github.com/msutkowski"><img src="https://avatars.githubusercontent.com/u/784953?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matt Sutkowski</b></sub></a><br /><a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=msutkowski" title="Code">💻</a> <a href="#tool-msutkowski" title="Tools">🔧</a></td>
     <td align="center"><a href="http://twitter.com/chantastic"><img src="https://avatars.githubusercontent.com/u/658360?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Chan</b></sub></a><br /><a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=chantastic" title="Code">💻</a> <a href="#content-chantastic" title="Content">🖋</a> <a href="#eventOrganizing-chantastic" title="Event Organizing">📋</a> <a href="#projectManagement-chantastic" title="Project Management">📆</a> <a href="#video-chantastic" title="Videos">📹</a></td>
   </tr>

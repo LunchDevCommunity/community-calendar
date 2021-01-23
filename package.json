@@ -8,7 +8,8 @@
 		"build": "cross-env NODE_ENV=production eleventy",
 		"dev": "cross-env NODE_ENV=development eleventy --serve",
 		"format": "prettier --write \"src/**/*.md\"",
-		"gen": "node ./cli"
+		"gen": "node ./cli",
+		"recognize": "all-contributors add"
 	},
 	"dependencies": {
 		"@11ty/eleventy": "^0.11.1",
