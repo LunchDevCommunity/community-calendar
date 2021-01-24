@@ -1,0 +1,101 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "msutkowski",
+      "name": "Matt Sutkowski",
+      "avatar_url": "https://avatars.githubusercontent.com/u/784953?v=4",
+      "profile": "https://github.com/msutkowski",
+      "contributions": [
+        "code",
+        "tool"
+      ]
+    },
+    {
+      "login": "chantastic",
+      "name": "Michael Chan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/658360?v=4",
+      "profile": "http://twitter.com/chantastic",
+      "contributions": [
+        "code",
+        "content",
+        "eventOrganizing",
+        "projectManagement",
+        "video"
+      ]
+    },
+    {
+      "login": "BenDMyers",
+      "name": "Ben Myers",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18060369?v=4",
+      "profile": "https://github.com/BenDMyers",
+      "contributions": [
+        "a11y",
+        "code",
+        "content",
+        "eventOrganizing",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "michaelgee22",
+      "name": "Michael Gee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17189731?v=4",
+      "profile": "http://michaelgee.com",
+      "contributions": [
+        "a11y",
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "Kirill-frontend",
+      "name": "Kirill-frontend",
+      "avatar_url": "https://avatars.githubusercontent.com/u/69352064?v=4",
+      "profile": "https://github.com/Kirill-frontend",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "roman-bytes",
+      "name": "Jacob Roman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4601329?v=4",
+      "profile": "https://romanbytes.dev/",
+      "contributions": [
+        "code",
+        "eventOrganizing"
+      ]
+    },
+    {
+      "login": "aditya28sarin",
+      "name": "Aditya Sarin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48805315?v=4",
+      "profile": "https://thetechnomaniac.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "chalkeater",
+      "name": "chalkeater",
+      "avatar_url": "https://avatars.githubusercontent.com/u/900767?v=4",
+      "profile": "https://github.com/chalkeater",
+      "contributions": [
+        "eventOrganizing"
+      ]
+    }
+  ],
+  "contributorsSortAlphabetically": true,
+  "contributorsPerLine": 7,
+  "projectName": "community-calendar",
+  "projectOwner": "LunchDevCommunity",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "none"
+}
