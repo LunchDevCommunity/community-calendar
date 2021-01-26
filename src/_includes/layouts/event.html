@@ -30,30 +30,7 @@
 			<main class="events-page">
 				<h1>{{ title }}</h1>
 				<small> {% if speakers %} {{ speakers | join: ', ' }} &middot; {% endif %} {{ date }} </small>
-				<div>
-					<small>Add this event to your calendar: </small>
-					<ul class="add-to-calendar">
-						<li>
-							<a aria-label="Add to Google Calendar" href="{{ googleLink }}">
-								{% include partials/googlecalendar.svg %}
-							</a>
-						</li>
-						<li>
-							<a aria-label="Add to Outlook Calendar" href="{{ outlookLink }}">
-								{% include partials/microsoftoutlook.svg %}
-							</a>
-						</li>
-						<li>
-							<a aria-label="Add to Office 365 Calendar" href="{{ officeLink }}">
-								{% include partials/microsoftoffice.svg %}
-							</a>
-						</li>
-						<li>
-							<a aria-label="Add to ics Calendar" href="{{ icsLink }}"> {% include partials/calendar.svg %} </a>
-						</li>
-					</ul>
-				</div>
-				{{ content }}
+				{% if calendarLinks.isPastEvent %}{% include partials/calendarLinks.html %}{% endif %} {{ content }}
 				<p>Join this event <a href="https://events.lunch.dev/discord">in Discord</a></p>
 			</main>
 		</div>

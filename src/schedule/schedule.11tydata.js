@@ -3,63 +3,62 @@ const { isBefore } = require('date-fns');
 const url = 'https://events.lunch.dev/discord';
 const location = 'Lunch Dev Community Discord at events.lunch.dev';
 
+function updateDesc(description, url) {
+	description
+		? `
+			Learn with us in the Lunch Dev Community Discord at <a href="${url}">${url}</a>
+
+			${description}
+	`
+		: `Learn with us in the Lunch Dev Community Discord at <a href="${url}">${url}</a>`;
+}
+
 module.exports = {
 	eleventyComputed: {
-		googleLink: ({ title, description, date: start }) => {
-			if (isBefore(new Date(start), new Date())) {
-				return;
-			}
-
-			return google({
-				title,
-				description,
-				start,
-				duration: [1, 'hour'],
-				location,
-				url,
-			});
-		},
-		outlookLink: ({ title, description, date: start }) => {
-			if (isBefore(new Date(start), new Date())) {
-				return;
-			}
-
-			return outlook({
-				title,
-				description,
-				start,
-				duration: [1, 'hour'],
-				location,
-				url,
-			});
-		},
-		officeLink: ({ title, description, date: start }) => {
-			if (isBefore(new Date(start), new Date())) {
-				return;
-			}
-
-			return office365({
-				title,
-				description,
-				start,
-				duration: [1, 'hour'],
-				location,
-				url,
-			});
-		},
-		icsLink: ({ title, description, date: start }) => {
-			if (isBefore(new Date(start), new Date())) {
-				return;
-			}
-
-			return ics({
-				title,
-				description,
-				start,
-				duration: [1, 'hour'],
-				location,
-				url,
-			});
+		calendarLinks: {
+			isPastEvent: ({ date: start }) => {
+				return isBefore(new Date(), new Date(start));
+			},
+			googleLink: ({ title, description, date: start }) => {
+				return google({
+					title,
+					description: updateDesc(description, url),
+					start,
+					duration: [1, 'hour'],
+					location,
+					url,
+				});
+			},
+			outlookLink: ({ title, description, date: start }) => {
+				return outlook({
+					title,
+					description: updateDesc(description, url),
+					start,
+					duration: [1, 'hour'],
+					location,
+					url,
+				});
+			},
+			officeLink: ({ title, description, date: start }) => {
+				return office365({
+					title,
+					description: updateDesc(description, url),
+					start,
+					duration: [1, 'hour'],
+					location,
+					url,
+				});
+			},
+			icsLink: ({ title, description, date: start }) => {
+				return ics({
+					title,
+					description: updateDesc(description, url),
+					start,
+					duration: [1, 'hour'],
+					location,
+					url,
+				});
+			},
 		},
 	},
 };
