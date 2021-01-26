@@ -88,6 +88,16 @@
       "contributions": [
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "ajcwebdev",
+      "name": "Anthony Campolo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12433465?v=4",
+      "profile": "http://dev.to/ajcwebdev",
+      "contributions": [
+        "content",
+        "eventOrganizing"
+      ]
     }
   ],
   "contributorsSortAlphabetically": true,
