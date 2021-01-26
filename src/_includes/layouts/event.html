@@ -30,7 +30,7 @@
 			<main class="events-page">
 				<h1>{{ title }}</h1>
 				<small> {% if speakers %} {{ speakers | join: ', ' }} &middot; {% endif %} {{ date }} </small>
-				{{ addToCalendarList }} {{ content }}
+				{% if calendarLinks.isPastEvent %}{% include partials/calendarLinks.html %}{% endif %} {{ content }}
 				<p>Join this event <a href="https://events.lunch.dev/discord">in Discord</a></p>
 			</main>
 		</div>
