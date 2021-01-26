@@ -1,9 +1,10 @@
 const markdownIt = require('markdown-it');
 const emoji = require('markdown-it-emoji');
 const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier');
+const getTwitchChannelEmbed = require('./src/utils/get-twitch-channel-embed');
 const getYouTubeVideoEmbed = require('./src/utils/get-youtube-video-embed');
 
-const { isAfter, isBefore, isToday, format } = require('date-fns');
+const { isAfter, isBefore, format } = require('date-fns');
 
 const isProduction = process.env.NODE_ENV === 'production';
 // It's value taken in scripts(package.json) returned boolean
@@ -31,9 +32,6 @@ module.exports = (eleventyConfig) => {
 			.filter((event) => isValidEvent(event) && isBefore(new Date(event.data.date), new Date()));
 	});
 	eleventyConfig.addCollection('upcomingEvents', (collectionApi) => {
-		// We include `isToday` assuming that a daily build job is ran at 12:01am,
-		// and we're okay with a daily event potentially showing even if it's in the past
-
 		return collectionApi
 			.getFilteredByGlob('./src/schedule/*.md')
 			.filter((event) => isValidEvent(event) && isAfter(new Date(event.data.date), new Date()));
@@ -60,6 +58,7 @@ module.exports = (eleventyConfig) => {
 		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
 	});
 
+	eleventyConfig.addShortcode('twitch', getTwitchChannelEmbed);
 	eleventyConfig.addShortcode('youtube-video', getYouTubeVideoEmbed);
 
 	if (isProduction) {
