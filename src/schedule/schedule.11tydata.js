@@ -4,13 +4,14 @@ const url = 'https://events.lunch.dev/discord';
 const location = 'Lunch Dev Community Discord at events.lunch.dev';
 
 function updateDesc(description, url) {
-	description
+	const newDescription = description
 		? `
 			Learn with us in the Lunch Dev Community Discord at <a href="${url}">${url}</a>
 
 			${description}
 	`
 		: `Learn with us in the Lunch Dev Community Discord at <a href="${url}">${url}</a>`;
+	return newDescription;
 }
 
 module.exports = {
