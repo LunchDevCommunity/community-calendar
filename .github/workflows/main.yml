@@ -1,9 +1,7 @@
 name: Netlify Rebuild
-
 on:
   schedule:
     - cron: '*/5 * * * *'
-
 jobs:
   build:
     name: Netlify Rebuild
