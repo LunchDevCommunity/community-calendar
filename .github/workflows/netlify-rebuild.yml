@@ -1,0 +1,13 @@
+name: Netlify Rebuild
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  build:
+    name: Netlify Rebuild
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/601321b7879709a8b8874175
