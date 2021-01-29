@@ -1,7 +1,7 @@
 ---
 title: Add Calendar Links to 11ty with Computed Data
 type: Mob Job
-date: 2021-02-08T01:00:00-05:00
+date: 2021-02-08T10:00:00-08:00
 description: Come and learn with us as we walk through Jacob Roman's learning experience of llty and adding in a add-to-calendar module.
 ---
 
