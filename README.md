@@ -1,7 +1,7 @@
 # 📅 Lunch.dev Community Calendar
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Welcome to the **Lunch.dev Community Calendar**! This site shows off all of the cool things we've been doing in our [Discord community](https://https://events.lunch.dev/discord). It's built with a static site generator called [Eleventy](https://11ty.dev).
@@ -57,6 +57,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://michaelgee.com"><img src="https://avatars.githubusercontent.com/u/17189731?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Michael Gee</b></sub></a><br /><a href="#a11y-michaelgee22" title="Accessibility">️️️️♿️</a> <a href="https://github.com/LunchDevCommunity/community-calendar/commits?author=michaelgee22" title="Code">💻</a> <a href="#design-michaelgee22" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/jaffrepaul"><img src="https://avatars.githubusercontent.com/u/6298501?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Paul</b></sub></a><br /><a href="#content-jaffrepaul" title="Content">🖋</a> <a href="#eventOrganizing-jaffrepaul" title="Event Organizing">📋</a></td>
     <td align="center"><a href="https://github.com/chalkeater"><img src="https://avatars.githubusercontent.com/u/900767?v=4?s=100" width="100px;" alt=""/><br /><sub><b>chalkeater</b></sub></a><br /><a href="#eventOrganizing-chalkeater" title="Event Organizing">📋</a></td>
+    <td align="center"><a href="https://github.com/keithtelliott"><img src="https://avatars.githubusercontent.com/u/43206213?v=4?s=100" width="100px;" alt=""/><br /><sub><b>keithtelliott</b></sub></a><br /><a href="#content-keithtelliott" title="Content">🖋</a> <a href="#eventOrganizing-keithtelliott" title="Event Organizing">📋</a></td>
   </tr>
 </table>
 
