@@ -1,0 +1,129 @@
+{
+	"a11y": {
+		"name": "Accessibility",
+		"emoji": "♿️"
+	},
+	"audio": {
+		"name": "Audio",
+		"emoji": "🔊"
+	},
+	"blog": {
+		"name": "Blogging"
+	},
+	"bug": {
+		"name": "Bug Reports",
+		"emoji": "🐛"
+	},
+	"business": {
+		"name": "Business Development",
+		"emoji": "💼"
+	},
+	"code": {
+		"name": "Code",
+		"emoji": "💻"
+	},
+	"content": {
+		"name": "Content",
+		"emoji": "🖋"
+	},
+	"data": {
+		"name": "Data",
+		"emoji": "🔣"
+	},
+	"design": {
+		"name": "Design",
+		"emoji": "🎨"
+	},
+	"doc": {
+		"name": "Documentation",
+		"emoji": "📖"
+	},
+	"eventOrganizing": {
+		"name": "Event Organizing",
+		"emoji": "📋"
+	},
+	"example": {
+		"name": "Examples",
+		"emoji": "💡"
+	},
+	"financial": {
+		"name": "Financial Support",
+		"emoji": "💵"
+	},
+	"fundingFinding": {
+		"name": "Funding/Grant Finder",
+		"emoji": "🔍"
+	},
+	"ideas": {
+		"name": "Ideas & Planning",
+		"emoji": "🤔"
+	},
+	"infra": {
+		"name": "Infrastructure",
+		"emoji": "🚇"
+	},
+	"maintenance": {
+		"name": "Maintenance",
+		"emoji": "🚧"
+	},
+	"mentorship": {
+		"name": "Mentorship",
+		"emoji": "🧑‍🏫"
+	},
+	"platform": {
+		"name": "Platform",
+		"emoji": "📦"
+	},
+	"plugin": {
+		"name": "Plugins & Utility Libraries",
+		"emoji": "🔌"
+	},
+	"projectManagement": {
+		"name": "Project Management",
+		"emoji": "📆"
+	},
+	"question": {
+		"name": "Question Answerer",
+		"emoji": "💬"
+	},
+	"research": {
+		"name": "Research",
+		"emoji": "🔬"
+	},
+	"review": {
+		"name": "Reviewed Pull Requests",
+		"emoji": "👀"
+	},
+	"security": {
+		"name": "Security",
+		"emoji": "🛡️"
+	},
+	"tool": {
+		"name": "Tooling",
+		"emoji": "🔧"
+	},
+	"translation": {
+		"name": "Translation",
+		"emoji": "🌍"
+	},
+	"test": {
+		"name": "Tests",
+		"emoji": "⚠️"
+	},
+	"tutorial": {
+		"name": "Tutorials",
+		"emoji": "✅"
+	},
+	"talk": {
+		"name": "Talks",
+		"emoji": "📢"
+	},
+	"userTesting": {
+		"name": "User Testing",
+		"emoji": "📓"
+	},
+	"video": {
+		"name": "Videos",
+		"emoji": "📹"
+	}
+}

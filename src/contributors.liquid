@@ -1,0 +1,20 @@
+---
+layout: 'layouts/page.html'
+---
+
+{% for contributor in contributors %}
+<article aria-labelledby="h-{{ contributor.login }}">
+	<img src="{{ contributor.avatar_url }}" alt="" />
+	<h2 id="h-{{ contributor.login }}">
+		<a href="{{ contributor.profile }}">{{ contributor.name }}</a>
+	</h2>
+	<ul>
+		{% for contribution in contributor.contributions %}
+		<li>
+			<span aria-hidden="true">{{ contributions[contribution].emoji }}</span>
+			<span>{{ contributions[contribution].name }}</span>
+		</li>
+		{% endfor %}
+	</ul>
+</article>
+{% endfor %}
