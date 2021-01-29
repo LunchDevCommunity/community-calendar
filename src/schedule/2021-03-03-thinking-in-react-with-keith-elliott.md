@@ -2,6 +2,8 @@
 title: Thinking in React with Keith Elliott
 type: Talk
 date: 2021-03-03T10:00:00-08:00
+speakers:
+  - Keith Elliott
 ---
 
 Keith Elliott talks through Thinking in React. He's creating an app, and capturing the journey in public (and he's just beginning the journey).
