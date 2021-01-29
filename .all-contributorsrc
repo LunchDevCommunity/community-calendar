@@ -108,6 +108,16 @@
         "content",
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "keithtelliott",
+      "name": "keithtelliott",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43206213?v=4",
+      "profile": "https://github.com/keithtelliott",
+      "contributions": [
+        "content",
+        "eventOrganizing"
+      ]
     }
   ],
   "contributorsSortAlphabetically": true,
