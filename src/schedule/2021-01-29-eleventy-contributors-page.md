@@ -9,3 +9,5 @@ Recently, we've begun recognizing contributions to this community calendar with 
 Join us, as we explore Eleventy's [global data](https://www.11ty.dev/docs/data-global/) system to create a `/contributors` page that automatically updates any time we recognize a contributor!
 
 Check out [Ben's pull request](https://github.com/LunchDevCommunity/community-calendar/pull/68) and [the deploy preview](https://deploy-preview-68--lunchdev-events.netlify.app/contributors/).
+
+{% youtube-video 'https://youtu.be/BBXxLK-EOB4' %}
