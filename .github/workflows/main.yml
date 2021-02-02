@@ -1,7 +1,7 @@
 name: Netlify Rebuild
 on:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '0 21 * * MON-FRI'
 jobs:
   build:
     name: Netlify Rebuild
