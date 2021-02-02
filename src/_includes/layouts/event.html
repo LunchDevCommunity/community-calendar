@@ -34,7 +34,11 @@
 			<main class="events-page">
 				<h1>{{ title }}</h1>
 				<small> {% if speakers %} {{ speakers | join: ', ' }} &middot; {% endif %} {{ date | asDateTime }} </small>
-				{% if calendarLinks.isPastEvent %}{% include partials/calendarLinks.html %}{% endif %} {{ content }}
+
+				{% if calendarLinks.isPastEvent %}
+				<div>{% include partials/calendarLinks.html %}{% include partials/join-discord-button.html %}</div>
+				{% endif %} {{ content }}
+
 				<p>
 					<span>
 						<svg
