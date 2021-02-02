@@ -60,6 +60,13 @@ module.exports = (eleventyConfig) => {
 
 	eleventyConfig.addShortcode('twitch', getTwitchChannelEmbed);
 	eleventyConfig.addShortcode('youtube-video', getYouTubeVideoEmbed);
+	eleventyConfig.addFilter('asDateTime', function (date) {
+		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
+	});
+
+	eleventyConfig.addFilter('pageSourcePath', function (inputPath) {
+		return `https://github.com/LunchDevCommunity/community-calendar/edit/main/${inputPath.replace('./', '')}`;
+	});
 
 	if (isProduction) {
 		eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
