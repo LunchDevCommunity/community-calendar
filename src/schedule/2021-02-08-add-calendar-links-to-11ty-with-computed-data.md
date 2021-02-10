@@ -13,6 +13,10 @@ Some things we will be covering:
 - Partials / Templates
 - Best approaches
 
+**Now on YouTube**
+
+{% youtube-video 'https://youtu.be/dKYtysS2bKk' %}
+
 ## Resources
 
 - [11ty Computed Data](https://www.11ty.dev/docs/data-computed/)
