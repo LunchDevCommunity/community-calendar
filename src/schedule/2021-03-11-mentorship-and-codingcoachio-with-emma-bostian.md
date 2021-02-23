@@ -1,7 +1,7 @@
 ---
 title: Mentorship and CodingCoach.io with Emma Bostian
 type: Episode Party
-date: 2021-02-25T10:00:00-08:00
+date: 2021-03-11T10:00:00-08:00
 ---
 
 Live listen and discussion of Emma Bostian's [React Podcast](https://reactpodcast.com) episode on mentorship. This episode aired August 1, 2019 and remains relevant to React developers today.
