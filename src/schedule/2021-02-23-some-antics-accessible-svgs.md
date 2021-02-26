@@ -7,7 +7,7 @@ speakers:
   - chantastic
 ---
 
-{% twitch 'someanticsdev' %}
+{% youtube-video 'https://youtu.be/t0vU8n1AQXU' %}
 
 **You know what they say… an SVG is worth a thousand words.**
 
