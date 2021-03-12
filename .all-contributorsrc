@@ -121,6 +121,15 @@
       ]
     },
     {
+      "login": "mjackson",
+      "name": "Michael Jackson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92839?v=4",
+      "profile": "https://mjackson.me",
+      "contributions": [
+        "eventOrganizing"
+      ]
+    },
+    {
       "login": "alexanderson1993",
       "name": "Alex",
       "avatar_url": "https://avatars.githubusercontent.com/u/6558157?v=4",
