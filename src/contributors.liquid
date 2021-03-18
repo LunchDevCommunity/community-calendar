@@ -3,12 +3,10 @@ title: Contributors
 layout: 'layouts/page.html'
 ---
 
-{% for contributor in contributors %}
-	{% if forloop.counter0|divisibleby:2 %}
-    	<div class="row">
-    {% endif %}
+<div class="row">
+	{% for contributor in contributors %}
 		<div class="col-md-6 d-flex justify-content-center crop">
-			<article class="card" aria-labelledby="h-{{ contributor.login }}">
+			<article class="card shadow-lg p-3 mb-5 bg-white rounded" aria-labelledby="h-{{ contributor.login }}">
 				<img class="card-img-top" src="{{ contributor.avatar_url }}" alt="" />
 				<div class="card-body">
 					<h2 id="h-{{ contributor.login }}">
@@ -25,9 +23,7 @@ layout: 'layouts/page.html'
 				</div>
 			</article>
 		</div>
-	{% if forloop.counter0|divisibleby:2 %}
-    	</div>
-    {% endif %}
-{% endfor %}
+	{% endfor %}
+</div>
 
 
