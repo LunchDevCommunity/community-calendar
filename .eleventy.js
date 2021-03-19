@@ -54,10 +54,6 @@ module.exports = (eleventyConfig) => {
 		return format(new Date(date), 'PP');
 	});
 
-	eleventyConfig.addFilter('asDateTime', function (date) {
-		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
-	});
-
 	eleventyConfig.addShortcode('twitch', getTwitchChannelEmbed);
 	eleventyConfig.addShortcode('youtube-video', getYouTubeVideoEmbed);
 	eleventyConfig.addFilter('asDateTime', function (date) {
