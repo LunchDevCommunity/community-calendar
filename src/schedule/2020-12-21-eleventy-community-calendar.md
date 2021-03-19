@@ -1,6 +1,6 @@
 ---
 title: Building a Community Calendar with Eleventy
-date: 2020-12-21T14:00:00-05:00
+date: 2020-12-21 19:00:00
 speakers:
   - Ben Myers
 ---

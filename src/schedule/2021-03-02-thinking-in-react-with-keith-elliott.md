@@ -1,7 +1,7 @@
 ---
 title: Thinking in React with Keith Elliott
 type: Talk
-date: 2021-03-02T08:00:00-08:00
+date: 2021-03-02 16:00:00
 speakers:
   - Keith Elliott
 ---

@@ -1,7 +1,7 @@
 ---
 title: Jamison Dance on Soft Skills and Creating React Rally
 type: Episode Party
-date: 2021-02-04T10:00:00-08:00
+date: 2021-02-04T18:00:00
 ---
 
 Live listen and discussion of Jamison Dance's [React Podcast](https://reactpodcast.com) episode on soft skills and React Rally. This episode aired August 15, 2019 and remains relevant to React developers today.

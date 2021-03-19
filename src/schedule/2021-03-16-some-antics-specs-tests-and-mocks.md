@@ -1,7 +1,7 @@
 ---
 title: 'Some Antics: Specs, Tests, and Mocks with Randy Brown'
 type: Live Event
-date: 2021-03-16T12:00:00-06:00
+date: 2021-03-16 17:00:00
 speakers:
   - Ben Myers
   - Randy Brown

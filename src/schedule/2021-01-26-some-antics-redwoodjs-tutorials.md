@@ -1,7 +1,7 @@
 ---
 title: 'Some Antics: Putting RedwoodJS Docs to the Test with Anthony Campolo'
 type: Live Event
-date: 2021-01-26T12:00:00-06:00
+date: 2021-01-26 18:00:00
 speakers:
   - Ben Myers
   - Anthony Campolo

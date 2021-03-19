@@ -1,7 +1,7 @@
 ---
 title: 'React Spring with Paul Henschel'
 type: Episode Party
-date: 2021-03-04T10:00:00-08:00
+date: 2021-03-04 18:00:00
 ---
 
 Live listen and discussion of Paul Henschel's [React Podcast](https://reactpodcast.com) episode on React Spring and lasting beauty on the web. This episode aired July 25th, 2019 and remains relevant to React developers today.

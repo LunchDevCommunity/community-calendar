@@ -1,7 +1,7 @@
 ---
 title: 'Some Antics: Accessible Routing in RedwoodJS'
 type: Live Event
-date: 2021-03-23 17:00:00 +0
+date: 2021-03-23 17:00:00
 speakers:
   - Ben Myers
   - Anthony Campolo

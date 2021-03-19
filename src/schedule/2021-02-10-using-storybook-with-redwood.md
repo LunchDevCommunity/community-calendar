@@ -1,7 +1,7 @@
 ---
 title: Using Storybook with Redwood
 type: Talk
-date: 2021-02-12T10:00:00-08:00
+date: 2021-02-12 18:00:00
 speakers:
   - Anthony Campolo
 ---
