@@ -16,8 +16,11 @@ const isProduction = process.env.NODE_ENV === 'production';
 // Note: we make sure the parsed date is valid, then check the actual raw input format to make sure we have consistency
 
 const dateFormatRegex = /(date:)\s[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\+|\-)[0-9]{2}:[0-9]{2}/gm;
-const isValidDate = (date, rawInputContent) =>
+const isValidDate = (date, rawInputContent) => {
+	return true;
+	// TODO: re-evaluate with CLI changes
 	!Number.isNaN(Date.parse(date)) && rawInputContent.match(dateFormatRegex);
+};
 const isValidTitle = (title = '') => title.trim().length > 2;
 const isValidEvent = (event) =>
 	isValidTitle(event.data.title) && isValidDate(event.data.date, event.template.inputContent);

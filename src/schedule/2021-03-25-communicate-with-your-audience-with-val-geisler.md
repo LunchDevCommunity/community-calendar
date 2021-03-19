@@ -1,7 +1,7 @@
 ---
 title: 'Communicate with your Audience, with Val Geisler'
 type: Episode Party
-date: 2021-03-25T10:00:00-08:00
+date: 2021-03-25 17:00:00 +0
 ---
 
 Live listen and discussion of Val Geisler's [React Podcast](https://reactpodcast.com) episode on communicating with your audience. This episode aired September 12th, 2019 and remains relevant to creators today.
