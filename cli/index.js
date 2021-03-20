@@ -21,12 +21,6 @@ ${printEmojiRibbon('pizza', pizzaCount)}
 `)
 );
 
-const timeZoneToOffset = {
-	PST: '-08:00',
-	CST: '-06:00',
-	EST: '-05:00',
-};
-
 const questions = [
 	{
 		type: 'input',
@@ -47,25 +41,18 @@ const questions = [
 	{
 		type: 'input',
 		name: 'date',
-		message: 'What is the date of the event? (format: DD/MM/YYYY)',
+		message: 'What is the date of the event? (format: YYYY/MM/DD)',
 		validate: function (value) {
 			// Naive validation - please don't pass bad dates... I'm so bad at regex :(
-			const valid = value.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/g);
+			const valid = value.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/g);
 
-			return !!valid || 'Please enter a date in a format like: 03/22/2233';
+			return !!valid || 'Please enter a date in a format like: 2030/01/31';
 		},
-	},
-	{
-		type: 'list',
-		name: 'timezone',
-		message: 'What timezone are you planning for?',
-		choices: Object.keys(timeZoneToOffset),
-		default: 'PST',
 	},
 	{
 		type: 'input',
 		name: 'time',
-		message: 'What hh or hh:mm (10 or 10:30)?',
+		message: 'What time (in UTC) hh or hh:mm (10 or 10:30)?',
 		validate: function (value) {
 			const valid = value.match(/^([0-9]{2}$|[0-9]{2}\:[0-9]{2})/);
 
@@ -77,7 +64,7 @@ const questions = [
 inquirer.prompt(questions).then((args) => {
 	const { date, title, event_type, timezone, time } = args;
 
-	const [day, month, year] = date.split('/');
+	const [year, month, day] = date.split('/');
 
 	const fileName = `${year}-${month}-${day}-${title
 		.toLowerCase()
@@ -117,7 +104,7 @@ date: ${ctx.date}
   `;
 
 	const [hours, minutes = '00'] = time.split(':');
-	const utcStr = `${year}-${month}-${day}T${hours}:${minutes}:00${timeZoneToOffset[timezone]}`;
+	const utcStr = `${year}-${month}-${day} ${hours}:${minutes}:00`;
 
 	const ctx = {
 		title,
