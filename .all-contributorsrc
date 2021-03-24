@@ -137,6 +137,15 @@
       "contributions": [
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "fokusferit",
+      "name": "Ferit Topcu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1215719?v=4",
+      "profile": "http://www.ftopcu.de",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsSortAlphabetically": true,
