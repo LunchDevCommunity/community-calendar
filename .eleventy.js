@@ -9,18 +9,8 @@ const { isAfter, isBefore, format } = require('date-fns');
 const isProduction = process.env.NODE_ENV === 'production';
 // It's value taken in scripts(package.json) returned boolean
 
-// Some helpers to make sure our event frontmatter is :100:
-// Make events have an eleventy and js-yaml-friendly standardized date format of:
-// date: 2021-01-11T21:00:00-08:00
-// See: https://www.11ty.dev/docs/dates/#setting-a-content-date-in-front-matter
-// Note: we make sure the parsed date is valid, then check the actual raw input format to make sure we have consistency
-
-const dateFormatRegex = /(date:)\s[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\+|\-)[0-9]{2}:[0-9]{2}/gm;
-const isValidDate = (date, rawInputContent) =>
-	!Number.isNaN(Date.parse(date)) && rawInputContent.match(dateFormatRegex);
 const isValidTitle = (title = '') => title.trim().length > 2;
-const isValidEvent = (event) =>
-	isValidTitle(event.data.title) && isValidDate(event.data.date, event.template.inputContent);
+const isValidEvent = (event) => isValidTitle(event.data.title);
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addCollection('events', (collectionApi) => {
@@ -52,10 +42,6 @@ module.exports = (eleventyConfig) => {
 
 	eleventyConfig.addFilter('asDateOnly', function (date) {
 		return format(new Date(date), 'PP');
-	});
-
-	eleventyConfig.addFilter('asDateTime', function (date) {
-		return `${format(new Date(date), 'MMM d, yyyy p')} PST`;
 	});
 
 	eleventyConfig.addShortcode('twitch', getTwitchChannelEmbed);

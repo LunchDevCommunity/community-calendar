@@ -1,7 +1,7 @@
 ---
 title: 'Single-Threaded: Erin Fox on Interviewing'
 type: Episode Party
-date: 2021-02-17T12:00:00-06:00
+date: 2021-02-17 18:00:00
 ---
 
 Erin Fox ([@erinfoox](https://twitter.com/erinfoox)) joins Jenn ([@gurlcode](https://twitter.com/gurlcode)) to talk about one of the most stressful parts of being a software developer: interviews. We talk about why interviewing in tech is nerve-racking, how to handle rejections and why, like dating, you should never commit too early.

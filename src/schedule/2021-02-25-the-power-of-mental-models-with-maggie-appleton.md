@@ -1,7 +1,7 @@
 ---
 title: 'The Power of Mental Models with Maggie Appleton'
 type: Episode Party
-date: 2021-02-25T10:00:00-08:00
+date: 2021-02-25 18:00:00
 ---
 
 Live listen and discussion of Maggie Appleton's [React Podcast](https://reactpodcast.com) episode on mental models. This episode aired March 19th, 2020 and remains relevant to React developers today.

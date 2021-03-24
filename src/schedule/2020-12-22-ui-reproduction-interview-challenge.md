@@ -1,6 +1,6 @@
 ---
 title: UI Reproduction Interview Challenge
-date: 2020-12-22T13:00:00-05:00
+date: 2020-12-22 18:00:00
 speakers:
   - Jacob Roman
   - chantastic

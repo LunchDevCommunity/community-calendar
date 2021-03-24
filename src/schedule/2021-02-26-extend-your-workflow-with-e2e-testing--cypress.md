@@ -1,7 +1,7 @@
 ---
 title: Extend Your Workflow with E2E Testing & Cypress
 type: Talk
-date: 2021-02-26T13:00:00-05:00
+date: 2021-02-26 18:00:00
 speakers:
   - Paul Jaffre
 ---

@@ -1,7 +1,7 @@
 ---
 title: Build Dumb Shit with Sara Vieira
 type: Episode Party
-date: 2021-02-11T10:00:00-08:00
+date: 2021-02-11 18:00:00
 ---
 
 Live listen and discussion of Sara Vieira's [React Podcast](https://reactpodcast.com) episode on mental health and developer advocacy. This episode aired October 31, 2019 and remains relevant to React developers today.

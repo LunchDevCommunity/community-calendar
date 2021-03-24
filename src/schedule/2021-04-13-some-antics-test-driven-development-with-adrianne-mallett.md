@@ -1,7 +1,7 @@
 ---
 title: 'Some Antics: Test-Driven Development with Adrianne Mallett'
 type: Live Event
-date: 2021-04-13T12:00:00-06:00
+date: 2021-04-13 17:00:00
 speakers:
   - Ben Myers
   - Adrianne Mallett

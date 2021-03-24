@@ -1,6 +1,6 @@
 ---
 title: Style the Lunch.dev Community Calendar
-date: 2020-12-28T14:00:00-05:00
+date: 2020-12-28 19:00:00
 ---
 
 Join us as we add CSS to our [Eleventy](https://11ty.dev)-based [community calendar](https://github.com/LunchDevCommunity/community-calendar) project.

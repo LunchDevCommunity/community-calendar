@@ -1,7 +1,7 @@
 ---
 title: 'Some Antics: Building Accessible SVG Icons in React with Chantastic'
 type: Live Event
-date: 2021-02-23T12:00:00-06:00
+date: 2021-02-23 18:00:00
 speakers:
   - Ben Myers
   - chantastic
