@@ -1,6 +1,6 @@
 ---
 title: 'Querying a GraphQL API'
-type: Live Event
+type: Talk
 date: 2021-04-05 17:00:00
 speakers:
   - Anthony Campolo
