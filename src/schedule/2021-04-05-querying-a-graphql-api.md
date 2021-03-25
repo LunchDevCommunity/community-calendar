@@ -6,4 +6,4 @@ speakers:
   - Anthony Campolo
 ---
 
-Anthony Campolo with demonstrate different approaches to querying a GraphQL API. Whether using Apollo Client, graphql-requests, or simply the fetch API, this talk will explore the numerous trade offs and considerations behind how to make GraphQL queries.
+Anthony Campolo will demonstrate different approaches to querying a GraphQL API. Whether using Apollo Client, `graphql-requests`, or simply the `fetch` API, this talk will explore the numerous trade-offs and considerations behind how to make GraphQL queries.
