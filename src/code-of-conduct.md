@@ -3,13 +3,6 @@ title: Code of Conduct
 layout: layouts/page.html
 ---
 
-```
-WORK IN PROGRESS.
-Notes are collected here while discussion takes place.
-
-TODO: Remove this banner before merging
-```
-
 ## Our Goal
 
 This community is dedicated to providing a harassment-free experience for everyone. We do not tolerate harassment of participants in any form.
@@ -54,9 +47,9 @@ If you have questions or concerns about these issues please feel free to message
 
 ## Reporting
 
-If you are being harassed by a member of our community, notice that someone else is being harassed, or have any other concerns, please contact the administrators via [INSERT APPROPRIATE CONTACT METHOD HERE]. If the person who is harassing you is on the admin team, they will not be involved in handling or resolving the incident.
+If you are being harassed by a member of our community, notice that someone else is being harassed, or have any other concerns, please contact the administrators via `hi@chan.dev` or `@moderators` Discord role. If the person who is harassing you is on the admin team, they will not be involved in handling or resolving the incident.
 
-The admin team will respond to any complaint as promptly as possible we can. If you do not get a timely response (for example, if no admins are currently online) then please put your personal safety and well-being first, and consider logging out and/or contacting the admins by email at [EMAIL ADDRESS HERE].
+The admin team will respond to any complaint as promptly as possible we can. If you do not get a timely response (for example, if no admins are currently online) then please put your personal safety and well-being first, and consider logging out and/or contacting the admins by email at `hi@chan.dev`.
 
 This code of conduct applies to our community's spaces, but if you are being harassed by a member of our community outside our spaces, we still want to know about it. We will take all good-faith reports of harassment by our members, especially the administrators, seriously. This includes harassment outside our spaces and harassment that took place at any point in time. The abuse team reserves the right to exclude people from the community based on their past behavior, including behavior outside of our spaces and behavior towards people who are not in this community.
 
@@ -79,26 +72,3 @@ This Code of Conduct is adapted from the Community Covenant (http://community-co
 ## License
 
 Community Covenant by Coraline Ada Ehmke is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/). Based on a work at http://community-covenant.net/.
-
----
-
-### Considerations
-
-- Careful not to penalize those participating in their non-native language with very nuanced language guidelines
-- Recommended age: Communiting that the Server is moderated for children
-- Usage of non-demeaning, non-agressive expletives being permissable but — preferrably — with intentionality and consideration
-- Gently diswading gendered coloquialisms like "guys"
-- Etiquette suggestions — examples made available for exceptionally (safety promoting) behavior
-  - Requesting consent before DMing
-  - Gently correcting first offenses of demeaning language and consent violating emoji (where usage seems unintended)
-  - When providing help and solutions, respond with empathy. Everyone has different levels of experience, and may be looking for different things. Seek first to understand where the asker is coming from, and what they're looking for. Avoid minimizing the challenges the asker is facing — what's familiar for you is likely not familiar for them!
-
-### Inspirations
-
-- [Community Covenant](https://community-covenant.net/version/1/0/)
-- Contributor Covenant
-  - [2.0](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)
-  - [1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct/)
-- [Party Corgi Network](https://www.partycorgi.com/coc)
-- [Piccalilli](https://piccalil.li/page/code-of-conduct)
-- [LGBTQ in Tech](https://lgbtq.technology/coc.html)
