@@ -1,5 +1,5 @@
 ---
-title: '⚡ Lightning Round Extravaganza'
+title: '⚡ Lightning Talk Extravaganza'
 type: Talk
 date: 2021-04-23 17:00:00
 speakers:
