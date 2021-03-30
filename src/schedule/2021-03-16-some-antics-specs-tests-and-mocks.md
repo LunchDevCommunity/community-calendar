@@ -7,8 +7,8 @@ speakers:
   - Randy Brown
 ---
 
-{% twitch 'someanticsdev' %}
-
 So your frontend needs some data. We get it — mistakes happen! The trouble is… your tests need mock data now.
 
 Join us on [Some Antics](https://twitch.tv/SomeAnticsDev) as [Randy Brown](https://twitter.com/thatrandybrown) shares how backend principles like API specs and mocks can improve our frontend developer experience.
+
+{% youtube-video 'https://www.youtube.com/watch?v=h1f8tUbpbbA' %}
