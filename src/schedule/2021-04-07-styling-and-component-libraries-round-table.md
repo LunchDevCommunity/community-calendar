@@ -7,9 +7,9 @@ speakers:
   - Everyone Else :)
 ---
 
-## Round Table #0 🎉
+## Round Table [0] 🎉
 
-Rount tables are an improv event where we choose any given topic while **strongly encouraging** everyone to participate talking about their experience/interest in the topic.
+Round tables are an improv event where we choose any given topic while **strongly encouraging** everyone to participate talking about their experience/interest in the topic.
 
 I'm someone who gets too heavily invested in the technologies that I use so I always want to hear alternative approaches to cure my ignorance of finding new ways of building things. These group events (I hope) will be a a great way to introduce new things/ways of doing things and giving some insight to why people would choose one thing over another.
 
