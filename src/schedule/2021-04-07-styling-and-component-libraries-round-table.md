@@ -13,7 +13,7 @@ Round tables are an improv event where we choose any given topic while **strongl
 
 I'm someone who gets too heavily invested in the technologies that I use so I always want to hear alternative approaches to cure my ignorance of finding new ways of building things. These group events (I hope) will be a a great way to introduce new things/ways of doing things and giving some insight to why people would choose one thing over another.
 
-Also if people have strong oppinions towards one side or another it will be a perfect opportunity to be as petty as possible and throw them into the #debategladiatorcolosseum to battle it out to the death. (haha I'm only jok... being serious)
+Also if people have really strong opinions towards one side or another it will be a perfect opportunity for me to throw them and someone else on the other side into the #debategladiatorcolosseum to battle it out to the death. (haha I'm only jok... being serious 😉)
 
 ---
 
