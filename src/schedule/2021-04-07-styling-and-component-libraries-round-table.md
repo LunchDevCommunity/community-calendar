@@ -1,7 +1,7 @@
 ---
 title: 'Round Table: Styling & Component Libraries In React'
 type: Round Table
-date: 2021-04-07 18:00:00
+date: 2021-04-07 17:00:00
 speakers:
   - Michael Gee
   - Everyone Else :)
