@@ -1,5 +1,5 @@
 ---
-title: 'Some Antics: Test-Driven Development with Adrianne Mallett'
+title: 'Some Antics: Writing Tests First with Adrianne Mallett'
 type: Live Event
 date: 2021-04-13 17:00:00
 speakers:
