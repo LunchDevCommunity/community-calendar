@@ -11,6 +11,7 @@ speakers:
   - Martin Bavio
   - Randy Brown
   - Robb Schuneman
+  - Toby Baratta
 ---
 
 **Eight speakers. Five minutes each.**
