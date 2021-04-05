@@ -9,6 +9,7 @@ speakers:
   - Chantastic
   - Ferit Topcu
   - Martin Bavio
+  - Randy Brown
   - Robb Schuneman
 ---
 
@@ -24,4 +25,5 @@ The lightning talks are:
 - **Chantastic:** CSS-ing with Attribute Selectors
 - **Ferit Topcu:** 5 Mental Models to Help In Your Career
 - **Martin Bavio:** 3 Things CSS Can Do Now
+- **Randy Brown:** MAPS: Navigating Frontend Architecture
 - **Robb Schuneman:** Dependency Injection Is An Incredible Journey Full of Adventure and Exploration
