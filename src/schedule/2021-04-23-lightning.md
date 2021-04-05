@@ -27,3 +27,4 @@ The lightning talks are:
 - **Martin Bavio:** 3 Things CSS Can Do Now
 - **Randy Brown:** MAPS: Navigating Frontend Architecture
 - **Robb Schuneman:** Dependency Injection Is An Incredible Journey Full of Adventure and Exploration
+- **Toby Baratta:** Drink Espresso; Don't Be Depresso: Coming up for Air When Deep in a Problem
