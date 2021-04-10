@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="/css/navbar.css" />
 		<link rel="stylesheet" href="/css/homepage.css" />
+		<link rel="stylesheet" href="/css/footer.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Source+Code+Pro:ital,wght@0,400;0,600;1,500;1,600&display=swap"
@@ -16,7 +17,6 @@
 	</head>
 	<body data-typeface="system-ui">
 		{% include partials/header.html %}
-
 		<main data-layout="centered-single-column">
 			<h2 class="events-title">Upcoming Events</h2>
 			<section id="upcoming-events-section" class="events-section">
@@ -46,5 +46,6 @@
 				{% endfor %}
 			</section>
 		</main>
+		{% include partials/footer.html %}
 	</body>
 </html>

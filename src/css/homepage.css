@@ -5,9 +5,13 @@
 	margin: 0;
 }
 
+.events-title {
+	margin-left: 16px;
+}
+
 .event-item {
 	position: relative;
-	width: calc(50% - 32px);
+	width: calc(33% - 32px);
 	min-height: 140px;
 	margin: 16px;
 	padding: 16px;
@@ -71,9 +75,7 @@
 	.events-title {
 		text-align: center;
 	}
-}
 
-@media screen and (max-width: 600px) {
 	.events-section {
 		flex-direction: column;
 	}
