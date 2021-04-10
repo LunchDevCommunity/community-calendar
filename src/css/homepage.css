@@ -71,7 +71,13 @@
 	background-color: #495057;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
+	.event-item {
+		width: calc(50% - 32px);
+	}
+}
+
+@media screen and (max-width: 600px) {
 	.events-title {
 		text-align: center;
 	}
