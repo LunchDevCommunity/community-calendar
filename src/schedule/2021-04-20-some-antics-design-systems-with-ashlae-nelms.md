@@ -1,5 +1,5 @@
 ---
-title: 'Some Antics: Accessible Design Tokens with Ashlae Nelms'
+title: 'Some Antics: Accessible Design Systems with Ashlae Nelms'
 type: Episode Party
 date: 2021-04-20 17:00:00
 speakers:
