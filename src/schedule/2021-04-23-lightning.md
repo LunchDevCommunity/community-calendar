@@ -16,12 +16,12 @@ speakers:
 
 Join us on April 23 as we give rapid-fire introductions to some of the things that we've learned. The lightning talks are:
 
-| Speaker                         | Talk                                                                            | Resources                                                                                                            |
-| ------------------------------- | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Ferit Topcu                     | 5 Mental Models to Help In Your Career                                          | [Ferit's slides](https://app.pitch.com/app/public/presentation/69f7599c-0828-4115-9f5e-b7869d20b323)                 |
-| Toby Baratta                    | Drink Espresso; Don't Be Depresso: Coming Up For Air When Deep In a Problem     |
-| Adrianne Mallett                | It's ~~Rude~~ An Antipattern to Not Use Semantic Versioning                     | [Adrianne's slides](https://drive.google.com/file/d/1130HzoMkZ3r1pAu8XTAUk1JZ75bEdAAx/view?usp=sharing)              |
+| Speaker                         | Talk                                                                            | Resources                                                                                                                            |
+| ------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Ferit Topcu                     | 5 Mental Models to Help In Your Career                                          | [Ferit's slides](https://app.pitch.com/app/public/presentation/69f7599c-0828-4115-9f5e-b7869d20b323)                                 |
+| Toby Baratta                    | Drink Espresso; Don't Be Depresso: Coming Up For Air When Deep In a Problem     | [Toby's slides](https://microsoft-my.sharepoint-df.com/:p:/p/tobaratt/EWr0481boQVPvOnxQSH2CzcB1JTD1nk4A-7HOvn9NP6Slw?e=dkbT6q)       |
+| Adrianne Mallett                | It's ~~Rude~~ An Antipattern to Not Use Semantic Versioning                     | [Adrianne's slides](https://drive.google.com/file/d/1xCf9ZzStuSq44gPTltcxOmaJzOIp9qOA/view?usp=sharing)                              |
 | Alex Anderson _(via recording)_ | A Few Delightful User Interactions                                              |
-| Ben Myers                       | On the `<dl>`: The Semantics You Never Knew You Needed                          | [Ben's slides](https://docs.google.com/presentation/d/1MfWxT_sAhuNQEPq4Y0OnGvt5dL5SUzvdGAtHiGOiAKo/edit?usp=sharing) |
-| Chantastic                      | CSS-ing with Attribute Selectors                                                |
-| Robb Schuneman                  | Dependency Injection Is An Incredible Journey Full of Adventure and Exploration |
+| Ben Myers                       | On the `<dl>`: The Semantics You Never Knew You Needed                          | [Ben's slides](https://docs.google.com/presentation/d/1MfWxT_sAhuNQEPq4Y0OnGvt5dL5SUzvdGAtHiGOiAKo/edit?usp=sharing)                 |
+| Chantastic                      | CSS-ing with Attribute Selectors                                                | [Chan's pen](https://codepen.io/chantastic/pen/eYgPQjb) and [his blogpost](https://chan.dev/posts/css-ing-with-attribute-selectors/) |
+| Robb Schuneman                  | Dependency Injection Is An Incredible Journey Full of Adventure and Exploration |                                                                                                                                      |
