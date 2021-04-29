@@ -1,7 +1,7 @@
 ---
-title: 'Some Antics: Making Web Components with Andy Bell'
-type: Episode Party
-date: 2021-04-27 17:00:00
+title: "Some Antics: Let's Make Dang Spicy Web Components with Andy Bell!"
+type: Live Event
+date: 2021-04-28 18:30:00
 speakers:
   - Ben Myers
   - Andy Bell

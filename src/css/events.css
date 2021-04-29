@@ -19,3 +19,18 @@
 .events-page .add-to-calendar li svg:hover {
 	fill: black;
 }
+
+th {
+	background-color: black;
+	color: white;
+	padding: 0.5em;
+}
+
+td {
+	background-color: #f0f0f0;
+	padding: 0.5em;
+}
+
+tbody tr:nth-child(odd) td {
+	background-color: white;
+}
