@@ -11,11 +11,11 @@ speakers:
 
 Round tables are an improv event where we choose any given topic while **strongly encouraging** everyone to participate talking about their experience/interest in the topic.
 
-I'm someone who can get too heavily invested in the ways that I do things or the technologies that I use so I always want to hear alternative perspectives to cure my ignorance of finding approaches or solutions. These group events (I hope) will be a a great way to introduce new things/ways of doing things and giving some insight to why people would choose one thing over another.
+I'm someone who can get too heavily invested in the ways that I do things or the technologies that I use so I always want to hear alternative perspectives to cure my ignorance of finding new approaches or solutions. These group events (I hope) will be a a great way to introduce new things/ways of doing things and giving some insight to why people would choose one thing over another.
 
 ---
 
-This round table's topic is the advice you would give to your younger self that would drastically accelerate you to where you are today. This can be at any point in your personal timeline whether it was when you were transitioning from beginnger to junior, junior to senior, or maybe even senior to lead.
+This round table's topic is the advice you would give to your younger self that would drastically accelerate you to where you are today. This can be at any point in your personal timeline whether it was when you were transitioning from beginner to junior, junior to senior, or maybe even senior to lead.
 
 ![But wait, there's more](https://media.giphy.com/media/9V1F9o1pBjsxFzHzBr/giphy.gif)
 
