@@ -1,7 +1,7 @@
 ---
 title: 'Create posts in Eleventy using collections'
 type: Mob Job
-date: 2021-05-07 10:00:00
+date: 2021-05-07 17:00:00
 speakers:
   - chantastic
 ---

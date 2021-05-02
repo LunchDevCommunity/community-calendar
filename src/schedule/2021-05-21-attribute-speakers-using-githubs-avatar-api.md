@@ -1,7 +1,7 @@
 ---
 title: 'Attribute Speakers using GitHub Avatars API'
 type: Mob Job
-date: 2021-05-21 10:00:00
+date: 2021-05-21 17:00:00
 speakers:
   - chantastic
 ---
