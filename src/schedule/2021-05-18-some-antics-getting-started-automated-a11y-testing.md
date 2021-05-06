@@ -1,7 +1,7 @@
 ---
 title: 'Some Antics: Getting Started with Automated Accessibility Testing, with Lucia Cerchie'
 type: Live Event
-date: 2021-05-18 15:00:00
+date: 2021-05-18 17:00:00
 speakers:
   - Ben Myers
   - Lucia Cerchie
