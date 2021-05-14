@@ -1,7 +1,7 @@
 ---
 title: 'Localize datetimes in Eleventy with JS'
 type: Mob Job
-date: 2021-05-14 17:00:00
+date: 2021-05-28 17:00:00
 speakers:
   - chantastic
 ---
