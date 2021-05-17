@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/reset.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/navbar.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=Source+Code+Pro:ital,wght@0,400;0,600;1,500;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<title>{{ title }} | Lunch.dev Community Calendar</title>
+	</head>
+	<body data-typeface="system-ui">
+		{% include partials/header.html %}
+		<div data-layout="centered-single-column">
+			<main>
+				<h1>{{ title }}</h1>
+				<small> {% if authors %} {{ authors | join: ', ' }} &middot; {% endif %} {{ date | asDateTime }} </small>
+				{{ content | safe }}
+			</main>
+		</div>
+	</body>
+</html>
