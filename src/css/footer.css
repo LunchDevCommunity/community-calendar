@@ -2,8 +2,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 calc(var(--mainPadding) / 4);
-	margin: 16px 0 24px 16px;
+	margin: 16px;
 }
 
 .footer-links {
@@ -27,9 +26,10 @@ footer {
 .footer-social {
 	display: flex;
 	align-items: center;
+	justify-content: space-evenly;
+	min-width: 180px;
 }
 .footer-social a {
-	margin: 0 8px;
 	max-height: 20px;
 }
 .footer-social svg {
@@ -50,7 +50,7 @@ footer {
 	margin-right: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	footer {
 		flex-direction: column-reverse;
 	}
