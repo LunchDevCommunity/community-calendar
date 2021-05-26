@@ -1,0 +1,74 @@
+<div id="sesh">
+	<style>
+		#sesh:not(:target) {
+			display: none;
+		}
+		#sesh {
+			margin: 3rem 1rem 1rem;
+			box-sizing: border-box;
+			padding: 1rem;
+			background-color: #ddd;
+		}
+		#sesh dt {
+			font-weight: bolder;
+		}
+		#sesh dd {
+			padding-inline-start: 1rem;
+		}
+		#sesh hr {
+			margin-block-start: 1.25rem;
+			margin-block-end: 1.25rem;
+		}
+		#sesh [data-color-code]::before {
+			content: attr(data-color-code);
+		}
+		#sesh [data-color-code]::after {
+			content: '';
+			display: inline-block;
+			margin-inline-start: 0.5rem;
+			position: relative;
+			transform: translateY(0.125em);
+			width: 0.9em;
+			height: 0.9em;
+			border: 1px solid hsla(0, 0%, 0%, 0.4);
+		}
+		#sesh [data-color-code='react-podcast']::before {
+			content: '#FFD600';
+		}
+		#sesh [data-color-code='react-podcast']::after {
+			background-color: #ffd600;
+		}
+		#sesh [data-color-code='some-antics']::before {
+			content: '#4c1074';
+		}
+		#sesh [data-color-code='some-antics']::after {
+			background-color: #4c1074;
+		}
+		#sesh [data-color-code='single-threaded']::before {
+			content: '#E91C80';
+		}
+		#sesh [data-color-code='single-threaded']::after {
+			background-color: #e91c80;
+		}
+	</style>
+	<h3>Discord Sesh Command</h3>
+	<p>Paste this <code>sesh</code> command into a Discord channel to create a joinable event:</p>
+	<div style="background-color: white; padding: 1rem; margin-top: 0.5rem">
+		<code>!create {{title}} on {{ date | asDateTime }}</code>
+	</div>
+	<hr />
+	<dl>
+		<dt>Title</dt>
+		<dd>{{title}}</dd>
+		<dt>Time</dt>
+		<dd>{{date | asDateTime}}</dd>
+		<dt>Duration</dt>
+		<dd>1hr</dd>
+		<dt>Color</dt>
+		<dd>
+			<div>React Podcast: <code data-color-code="react-podcast"></code></div>
+			<div>Some Antics: <code data-color-code="some-antics"></code></div>
+			<div>single-threaded: <code data-color-code="single-threaded"></code></div>
+		</dd>
+	</dl>
+</div>

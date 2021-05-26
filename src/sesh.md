@@ -44,6 +44,12 @@ If you've created an event that you'd now like to **modify or delete**, click th
 
 To edit the event, click the provided link. To delete the event, react to Sesh's message with both the wastebasket and the checkmark emojis that Sesh has provided.
 
+### `#sesh` url fragment
+
+Event urls have a hidden section with pre-filled command for creating a sesh event in Discord. Append `#sesh` to an event url to make it visible.
+
+![Sample hidden command section in event page. The label reads 'Paste this sesh command into a Discord channel to create a joinable event:'. The sample command reads '!create Some Antics: Getting Started with Automated Accessibility Testing, with Lucia Cerchie on May 18, 2021 10:00 AM PST for 1 hour'.](/assets/sesh-url.png)
+
 ## I need a bit more information!
 
 You can find Sesh's full list of commands at [sesh.fyi/manual](https://sesh.fyi/manual/). Most of these commands require server admin privileges, however.
