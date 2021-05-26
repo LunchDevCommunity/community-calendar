@@ -7,5 +7,5 @@ module.exports.getAvatarUrl = function (user) {
 		return `https://avatars.githubusercontent.com/${user.github}`;
 	}
 
-	return 'https://placekitten.com/64/64';
+	return '/assets/avatar-fallback.jpg';
 };
