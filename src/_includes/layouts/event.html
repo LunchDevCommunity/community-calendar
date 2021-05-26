@@ -37,11 +37,11 @@
 
 				{% if calendarLinks.isPastEvent %}
 				<div>{% include partials/calendarLinks.html %}{% include partials/join-discord-button.html %}</div>
-				{% endif %} {{ content }} {% if speakers.size > 1 %}
-				<h3>Speakers</h3>
-				{% elsif speakers.size == 1 %}
+				{% endif %} {{ content }} {% case speakers.size %} {% when undefined %} {% when 1 %}
 				<h3>Speaker</h3>
-				{% else %} {% endif %}
+				{% else %}
+				<h3>Speakers</h3>
+				{% endcase %}
 
 				<ul data-unstyled-list data-speaker-grid>
 					{% for speaker in speakers %}
