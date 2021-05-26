@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="/css/navbar.css" />
+		<link rel="stylesheet" href="/css/elements.css" />
 		<link rel="stylesheet" href="/css/homepage.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
@@ -28,6 +29,19 @@
 						{% if event.data.type %}{{ event.data.type }} &middot; {% endif %} {{ event.data.date || asDateTime }}
 					</p>
 
+					<ul
+						data-unstyled-list
+						data-flex-stack
+						style="--flex-stack--direction: row; --flex-stack--gap: 0.25rem"
+						class="event-item__speaker-list"
+					>
+						{% for speaker in event.data.speakers %}
+						<li>
+							<img data-avatar src="{{people[speaker] | personAvatar}}" alt="{{speaker}}" />
+						</li>
+						{% endfor %}
+					</ul>
+
 					<a href="{{ event.url }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
 				</article>
 				{% endfor %}
@@ -41,6 +55,20 @@
 					<p class="fg1 block subtitle">
 						{% if event.data.type %}{{ event.data.type }} &middot; {% endif %} {{ event.data.date || asDateTime }}
 					</p>
+
+					<ul
+						data-unstyled-list
+						data-flex-stack
+						style="--flex-stack--direction: row; --flex-stack--gap: 0.25rem"
+						class="event-item__speaker-list"
+					>
+						{% for speaker in event.data.speakers %}
+						<li>
+							<img data-avatar src="{{people[speaker] | personAvatar}}" alt="{{speaker}}" />
+						</li>
+						{% endfor %}
+					</ul>
+
 					<a href="{{ event.url }}" aria-label="View Details for '{{ event.data.title }}'">View Details &#8250;</a>
 				</article>
 				{% endfor %}

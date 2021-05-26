@@ -78,9 +78,9 @@ code {
 	font-style: italic;
 }
 
-main li + li {
+/* main li + li {
 	margin-top: 1.5em;
-}
+} */
 
 aside {
 	background-color: lightgoldenrodyellow;
