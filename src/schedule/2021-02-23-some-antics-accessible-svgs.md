@@ -4,7 +4,7 @@ type: Live Event
 date: 2021-02-23 18:00:00
 speakers:
   - Ben Myers
-  - chantastic
+  - Michael Chan
 ---
 
 {% youtube-video 'https://youtu.be/t0vU8n1AQXU' %}

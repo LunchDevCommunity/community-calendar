@@ -4,7 +4,7 @@ description: We'll be adding them to the Eleventy site but the knowledge is tota
 type: Mob Job
 date: 2021-01-15 18:00:00
 speakers:
-  - chantastic
+  - Michael Chan
 ---
 
 We've been learning a ton about Eleventy by building up https://events.lunch.dev/.

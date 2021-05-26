@@ -8,7 +8,7 @@ speakers:
   - Adrianne Mallett
   - Alex Anderson
   - Ben Myers
-  - Chantastic
+  - Michael Chan
 ---
 
 **Six speakers. Five minutes each.**
