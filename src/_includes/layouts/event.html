@@ -79,24 +79,7 @@
 					</span>
 				</p>
 			</main>
-			<div id="sesh" aria-hidden="true">
-				<style>
-					#sesh:not(:target) {
-						display: none;
-					}
-					#sesh {
-						margin: 3rem 1rem 1rem;
-						box-sizing: border-box;
-						padding: 1rem;
-						background-color: #ddd;
-					}
-				</style>
-				<p>
-					<strong>Paste this <code>sesh</code> command into a Discord channel to create a joinable event:</strong>
-				</p>
-				<br />
-				<code>!create {{title}} on {{ date | asDateTime }} for 1 hour</code>
-			</div>
+			{% include partials/event-sesh-command.html %}
 		</div>
 	</body>
 </html>
