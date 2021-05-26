@@ -1,5 +1,9 @@
 module.exports.getAvatarUrl = function (user) {
-	if (user?.avatar_url) {
+	if (!user) {
+		return '/assets/avatar-fallback.jpg';
+	}
+	
+	if (user.avatar_url) {
 		return user?.avatar_url;
 	}
 
