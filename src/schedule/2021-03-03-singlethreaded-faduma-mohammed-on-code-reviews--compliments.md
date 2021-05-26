@@ -2,6 +2,9 @@
 title: 'single-threaded: Faduma Mohammed on Code Reviews & Compliments'
 type: Episode Party
 date: 2021-03-03 18:00:00
+speakers:
+  - Jenn Creighton
+  - Faduma Mohammed
 ---
 
 Faduma Mohammed ([@FadumaFaralacag](https://twitter.com/FadumaFaralacag)) joins the podcast to talk about code reviews, pull request pairing, and why Github is a volcano of miscommunication.

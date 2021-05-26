@@ -2,6 +2,9 @@
 title: "single-threaded: Crystal Martin on the Value of 'I Don't Know'"
 type: Episode Party
 date: 2021-02-24 18:00:00
+speakers:
+  - Jenn Creighton
+  - Crystal Martin
 ---
 
 Crystal Martin ([@codermeow](https://twitter.com/codermeow)) joins Jenn ([@gurlcode](https://twitter.com/gurlcode)) to explore why developers hesitate to ask for help, how to handle our mistakes, and the value of saying "I don't know".

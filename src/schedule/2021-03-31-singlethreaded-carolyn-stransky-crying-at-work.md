@@ -2,6 +2,9 @@
 title: 'Single-Threaded: Carolyn Stransky on Crying at Work'
 type: Episode Party
 date: 2021-03-31 17:00:00
+speakers:
+  - Jenn Creighton
+  - Carolyn Stransky
 ---
 
 Each season, [single-threaded](https://anchor.fm/single-threaded/) tackles a new topic in software engineering. This first season, we're exploring feelings. Why do we like some technologies but dislike others? How do our emotions come into play with our career choices? These are some of the questions we'll be answering this season. Episodes are a mix of guest interviews and solo musings.
