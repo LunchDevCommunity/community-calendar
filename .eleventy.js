@@ -3,6 +3,7 @@ const emoji = require('markdown-it-emoji');
 const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier');
 const getTwitchChannelEmbed = require('./src/utils/get-twitch-channel-embed');
 const getYouTubeVideoEmbed = require('./src/utils/get-youtube-video-embed');
+const personUtils = require('./src/utils/person');
 
 const { isAfter, isBefore, format } = require('date-fns');
 
@@ -53,6 +54,8 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter('pageSourcePath', function (inputPath) {
 		return `https://github.com/LunchDevCommunity/community-calendar/edit/main/${inputPath.replace('./', '')}`;
 	});
+
+	eleventyConfig.addFilter('personAvatar', personUtils.getAvatarUrl);
 
 	if (isProduction) {
 		eleventyConfig.addPlugin(eleventyPluginFilesMinifier);

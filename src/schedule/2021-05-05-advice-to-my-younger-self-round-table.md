@@ -4,7 +4,6 @@ type: Round Table
 date: 2021-05-05 17:00:00
 speakers:
   - Michael Gee
-  - Everyone Else :)
 ---
 
 ## Round Table [1] 🎉

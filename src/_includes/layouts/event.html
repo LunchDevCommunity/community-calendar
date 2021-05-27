@@ -37,8 +37,25 @@
 
 				{% if calendarLinks.isPastEvent %}
 				<div>{% include partials/calendarLinks.html %}{% include partials/join-discord-button.html %}</div>
-				{% endif %} {{ content }}
+				{% endif %} {{ content }} {% case speakers.size %} {% when undefined %} {% when 1 %}
+				<h3>Speaker</h3>
+				{% else %}
+				<h3>Speakers</h3>
+				{% endcase %}
 
+				<ul data-unstyled-list data-speaker-grid>
+					{% for speaker in speakers %}
+					<li
+						data-card
+						data-box
+						data-flex-stack
+						style="--box--padding: 1rem; border-radius: 0.5rem; --flex-stack--gap: 0.5rem"
+					>
+						<img data-avatar src="{{people[speaker] | personAvatar}}" alt="" />
+						<span>{{speaker}}</span>
+					</li>
+					{% endfor %}
+				</ul>
 				<p>
 					<span>
 						<svg

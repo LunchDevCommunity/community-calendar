@@ -4,7 +4,7 @@ type: Live Event
 date: 2021-05-11 17:00:00
 speakers:
   - Ben Myers
-  - Chantastic
+  - Michael Chan
 ---
 
 {% twitch 'someanticsdev' %}

@@ -18,6 +18,16 @@
 	flex-direction: column;
 }
 
+.event-item__speaker-list {
+	padding-block-start: 1rem;
+	--avatar--size: 2.5rem;
+	flex-wrap: wrap;
+}
+
+.event-item__speaker-list [data-avatar] {
+	box-shadow: 1px 1px 0 -1px hsla(0, 0%, 0%, 0.4);
+}
+
 .event-item .subtitle {
 	color: #78757f;
 	font-style: italic;
@@ -40,7 +50,7 @@
 	align-self: flex-end;
 	width: fit-content;
 
-	margin-top: 1.5em;
+	margin-top: 1em;
 }
 
 .event-item a:hover {
