@@ -14,6 +14,7 @@
 			rel="stylesheet"
 		/>
 		<title>Lunch.dev Community Calendar</title>
+		<script src="/js/localize-dates.js" defer></script>
 	</head>
 	<body data-typeface="system-ui">
 		{% include partials/header.html %}
@@ -27,7 +28,9 @@
 
 					<p class="fg1 block subtitle">
 						<span>{% if event.data.type %}{{ event.data.type }} &middot; {% endif %}</span>
-						<time data-datetime datetime="{{event.data.date | toISOString }}">{{ event.data.date || asDateTime }}</time>
+						<time data-js-replace-content="datetime" datetime="{{event.data.date | toISOString }}"
+							>{{ event.data.date }}</time
+						>
 					</p>
 
 					<ul
@@ -76,18 +79,4 @@
 			</section>
 		</main>
 	</body>
-	<script>
-		document.querySelectorAll('[data-datetime]').forEach((dateEl) => {
-			let date = new Date(dateEl.getAttribute('datetime'));
-
-			dateEl.textContent = date.toLocaleString(undefined, {
-				month: 'short',
-				day: 'numeric',
-				year: 'numeric',
-				timeZoneName: 'short',
-				hour: 'numeric',
-				minute: 'numeric',
-			});
-		});
-	</script>
 </html>
