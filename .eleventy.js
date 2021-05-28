@@ -45,6 +45,10 @@ module.exports = (eleventyConfig) => {
 		return format(new Date(date), 'PP');
 	});
 
+	eleventyConfig.addFilter('toISOString', function (date) {
+		return new Date(date).toISOString();
+	});
+
 	eleventyConfig.addShortcode('twitch', getTwitchChannelEmbed);
 	eleventyConfig.addShortcode('youtube-video', getYouTubeVideoEmbed);
 	eleventyConfig.addFilter('asDateTime', function (date) {

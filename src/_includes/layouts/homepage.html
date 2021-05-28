@@ -27,7 +27,7 @@
 
 					<p class="fg1 block subtitle">
 						<span>{% if event.data.type %}{{ event.data.type }} &middot; {% endif %}</span>
-						<span data-datetime="{{event.data.date}}">{{ event.data.date || asDateTime }}</span>
+						<time data-datetime datetime="{{event.data.date | toISOString }}">{{ event.data.date || asDateTime }}</time>
 					</p>
 
 					<ul
@@ -78,7 +78,7 @@
 	</body>
 	<script>
 		document.querySelectorAll('[data-datetime]').forEach((dateEl) => {
-			let date = new Date(dateEl.getAttribute('data-datetime'));
+			let date = new Date(dateEl.getAttribute('datetime'));
 
 			dateEl.textContent = date.toLocaleString(undefined, {
 				month: 'short',
