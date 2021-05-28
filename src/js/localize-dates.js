@@ -1,4 +1,4 @@
-document.querySelectorAll('[data-js-replace-content="datetime"]').forEach((dateEl) => {
+document.querySelectorAll('time[datetime]').forEach((dateEl) => {
 	let date = new Date(dateEl.getAttribute('datetime'));
 	debugger;
 

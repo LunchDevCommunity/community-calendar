@@ -28,9 +28,7 @@
 
 					<p class="fg1 block subtitle">
 						<span>{% if event.data.type %}{{ event.data.type }} &middot; {% endif %}</span>
-						<time data-js-replace-content="datetime" datetime="{{event.data.date | toISOString }}"
-							>{{ event.data.date }}</time
-						>
+						<time datetime="{{event.data.date | toISOString }}">{{ event.data.date | asDateTime }}</time>
 					</p>
 
 					<ul
@@ -57,7 +55,8 @@
 				<article aria-labelledby="{{ event.data.title | slug }}" class="event-item">
 					<h3 id="{{ event.data.title | slug }}">{{ event.data.title }}</h3>
 					<p class="fg1 block subtitle">
-						{% if event.data.type %}{{ event.data.type }} &middot; {% endif %} {{ event.data.date || asDateTime }}
+						<span>{% if event.data.type %}{{ event.data.type }} &middot; {% endif %}</span>
+						<time datetime="{{event.data.date | toISOString }}">{{ event.data.date | asDateTime }}</time>
 					</p>
 
 					<ul
