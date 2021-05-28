@@ -1,6 +1,5 @@
 document.querySelectorAll('time[datetime]').forEach((dateEl) => {
 	let date = new Date(dateEl.getAttribute('datetime'));
-	debugger;
 
 	dateEl.textContent = date.toLocaleString(undefined, {
 		month: 'short',
