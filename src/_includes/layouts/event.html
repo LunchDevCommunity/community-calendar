@@ -27,13 +27,17 @@
 		/>
 		<meta property="og:image:alt" content="lunch.dev" />
 		<meta property="twitter:card" content="summary_large_image" />
+		<script src="/js/localize-dates.js" defer></script>
 	</head>
 	<body data-typeface="system-ui">
 		{% include partials/header.html %}
 		<div data-layout="centered-single-column">
 			<main class="events-page">
 				<h1>{{ title }}</h1>
-				<small> {% if speakers %} {{ speakers | join: ', ' }} &middot; {% endif %} {{ date | asDateTime }} </small>
+				<small>
+					<span>{% if speakers %} {{ speakers | join: ', ' }} &middot; {% endif %}</span>
+					<time datetime="{{ date | toISOString }}">{{ date | asDateTime }}</time>
+				</small>
 
 				{% if calendarLinks.isPastEvent %}
 				<div>{% include partials/calendarLinks.html %}{% include partials/join-discord-button.html %}</div>

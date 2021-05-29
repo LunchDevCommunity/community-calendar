@@ -39,10 +39,15 @@ module.exports = (eleventyConfig) => {
 
 	eleventyConfig.addPassthroughCopy('src/assets');
 	eleventyConfig.addPassthroughCopy('src/css');
+	eleventyConfig.addPassthroughCopy('src/js');
 	eleventyConfig.addPassthroughCopy('_redirects');
 
 	eleventyConfig.addFilter('asDateOnly', function (date) {
 		return format(new Date(date), 'PP');
+	});
+
+	eleventyConfig.addFilter('toISOString', function (date) {
+		return new Date(date).toISOString();
 	});
 
 	eleventyConfig.addShortcode('twitch', getTwitchChannelEmbed);
