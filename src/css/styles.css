@@ -16,7 +16,7 @@ body {
 }
 
 [data-layout='centered-single-column'] {
-	padding: 0 calc(var(--mainPadding) / 2);
+	padding: 0 calc(var(--mainPadding) / 4);
 }
 
 [data-responsive-youtube--container] {
