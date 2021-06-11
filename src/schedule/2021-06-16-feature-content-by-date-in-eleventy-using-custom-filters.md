@@ -1,7 +1,7 @@
 ---
 title: 'Feature content by date in Eleventy using custom filters'
 type: Mob Job
-date: 2021-06-11 17:00:00
+date: 2021-06-16 17:00:00
 speakers:
   - Michael Chan
 ---
