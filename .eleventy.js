@@ -5,7 +5,7 @@ const getTwitchChannelEmbed = require('./src/utils/get-twitch-channel-embed');
 const getYouTubeVideoEmbed = require('./src/utils/get-youtube-video-embed');
 const personUtils = require('./src/utils/person');
 
-const { isAfter, isBefore, format } = require('date-fns');
+const { isAfter, isBefore, format, isToday } = require('date-fns');
 
 const isProduction = process.env.NODE_ENV === 'production';
 // It's value taken in scripts(package.json) returned boolean
@@ -16,6 +16,11 @@ const isValidEvent = (event) => isValidTitle(event.data.title);
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addCollection('events', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/schedule/*.md');
+	});
+	eleventyConfig.addCollection('todaysEvents', (collectionApi) => {
+		return collectionApi
+			.getFilteredByGlob('./src/schedule/*.md')
+			.filter((event) => isValidEvent(event) && isToday(new Date(event.data.date)));
 	});
 	eleventyConfig.addCollection('pastEvents', (collectionApi) => {
 		return collectionApi

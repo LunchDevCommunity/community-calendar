@@ -21,6 +21,37 @@
 	<body data-typeface="system-ui">
 		{% include partials/header.html %}
 		<main data-layout="centered-single-column">
+			{% if collections.todaysEvents %}
+			<h2 class="events-title">Today</h2>
+			<section id="todays-events-section" class="events-section">
+				{% for event in collections.todaysEvents %}
+				<article aria-labelledby="{{ event.data.title | slug }}" class="event-item">
+					<h3 id="{{ event.data.title | slug }}">{{ event.data.title }}</h3>
+
+					<p class="fg1 block subtitle">
+						<span>{% if event.data.type %}{{ event.data.type }} &middot; {% endif %}</span>
+						<time datetime="{{event.data.date | toISOString }}">{{ event.data.date | asDateTime }}</time>
+					</p>
+
+					<ul
+						data-unstyled-list
+						data-flex-stack
+						style="--flex-stack--direction: row; --flex-stack--gap: 0.25rem"
+						class="event-item__speaker-list"
+					>
+						{% for speaker in event.data.speakers %}
+						<li>
+							<img data-avatar src="{{people[speaker] | personAvatar}}" alt="{{speaker}}" />
+						</li>
+						{% endfor %}
+					</ul>
+
+					<a href="{{ event.url }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
+				</article>
+				{% endfor %}
+			</section>
+			{% endif %}
+
 			<h2 class="events-title">Upcoming Events</h2>
 			<section id="upcoming-events-section" class="events-section">
 				{% for event in collections.upcomingEvents %}
