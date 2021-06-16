@@ -17,11 +17,6 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addCollection('events', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/schedule/*.md');
 	});
-	eleventyConfig.addCollection('todaysEvents', (collectionApi) => {
-		return collectionApi
-			.getFilteredByGlob('./src/schedule/*.md')
-			.filter((event) => isValidEvent(event) && isToday(new Date(event.data.date)));
-	});
 	eleventyConfig.addCollection('pastEvents', (collectionApi) => {
 		return collectionApi
 			.getFilteredByGlob('./src/schedule/*.md')
