@@ -5,7 +5,7 @@ const getTwitchChannelEmbed = require('./src/utils/get-twitch-channel-embed');
 const getYouTubeVideoEmbed = require('./src/utils/get-youtube-video-embed');
 const personUtils = require('./src/utils/person');
 
-const { isAfter, isBefore, format } = require('date-fns');
+const { isAfter, isBefore, format, isToday } = require('date-fns');
 
 const isProduction = process.env.NODE_ENV === 'production';
 // It's value taken in scripts(package.json) returned boolean

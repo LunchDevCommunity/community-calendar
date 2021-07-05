@@ -21,9 +21,40 @@
 	<body data-typeface="system-ui">
 		{% include partials/header.html %}
 		<main data-layout="centered-single-column">
+			<h2 id="next-event" class="events-title">Next event</h2>
+			<section id="next-event-section" aria-labelledby="next-event" class="events-section">
+				{% assign nextEvent = collections.upcomingEvents | first %}
+				<article aria-labelledby="{{ nextEvent.data.title | slug }}" class="event-item">
+					<h3 id="{{ nextEvent.data.title | slug }}">{{ nextEvent.data.title }}</h3>
+
+					<p class="fg1 block subtitle">
+						<span>{% if nextEvent.data.type %}{{ nextEvent.data.type }} &middot; {% endif %}</span>
+						<time datetime="{{nextEvent.data.date | toISOString }}">{{ nextEvent.data.date | asDateTime }}</time>
+					</p>
+
+					<ul
+						data-unstyled-list
+						data-flex-stack
+						style="--flex-stack--direction: row; --flex-stack--gap: 0.25rem"
+						class="event-item__speaker-list"
+					>
+						{% for speaker in nextEvent.data.speakers %}
+						<li>
+							<img data-avatar src="{{people[speaker] | personAvatar}}" alt="{{speaker}}" />
+						</li>
+						{% endfor %}
+					</ul>
+
+					<a href="{{ nextEvent.url }}" aria-label="View Details for {{ nextEvent.data.title }}"
+						>View Details &#8250;</a
+					>
+				</article>
+			</section>
+
 			<h2 class="events-title">Upcoming Events</h2>
 			<section id="upcoming-events-section" class="events-section">
-				{% for event in collections.upcomingEvents %}
+				{% assign upcomingEvents = collections.upcomingEvents | slice: 1, collections.upcomingEvents.length %} {% for
+				event in upcomingEvents %}
 				<article aria-labelledby="{{ event.data.title | slug }}" class="event-item">
 					<h3 id="{{ event.data.title | slug }}">{{ event.data.title }}</h3>
 
