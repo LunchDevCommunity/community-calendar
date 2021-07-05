@@ -1,0 +1,19 @@
+{
+	"name": "Lunch.dev Calendar",
+	"short_name": "Lunch.dev Calendar",
+	"icons": [
+		{
+			"src": "/assets/favicon/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/assets/favicon/android-chrome-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#ffd600",
+	"background_color": "#ffd600",
+	"display": "standalone"
+}
