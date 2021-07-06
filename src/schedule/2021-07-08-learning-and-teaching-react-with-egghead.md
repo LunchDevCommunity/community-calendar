@@ -1,7 +1,7 @@
 ---
 title: 'Learning and Teaching React with Egghead'
 type: Live Event
-date: 2021-07-08 18:00:00
+date: 2021-07-08 17:00:00
 speakers:
   - Michael Chan
   - Kent C. Dodds
