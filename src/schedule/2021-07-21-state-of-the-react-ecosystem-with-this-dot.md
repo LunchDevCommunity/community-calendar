@@ -1,7 +1,7 @@
 ---
 title: 'State of React Ecosystem with This Dot'
 type: Live Event
-date: 2021-07-21 17:00:00
+date: 2021-07-15 17:00:00
 speakers:
   - Michael Chan
   - Shruti Kapoor
