@@ -1,13 +1,14 @@
 ---
 title: 'State of React Ecosystem with This Dot'
 type: Live Event
-date: 2021-07-15 17:00:00
+date: 2021-07-15 16:00:00
 speakers:
   - Michael Chan
   - Shruti Kapoor
   - Ian Sutherland
   - David Ceddia
   - Brandon Bayer
+  - Keionne Derousselle
 ---
 
 Keep up with modern web technology advancements through these special “State of” events. This month, we’re bringing you “State of React Ecosystem”. Hear from core contributors, library authors, & more about various frameworks within the React Ecosystem!
