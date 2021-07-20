@@ -7,3 +7,5 @@ speakers:
 ---
 
 Prisma is a suite of database tools that makes things like data access, modeling, and migrations approachable.
+
+{% youtube-video 'https://youtu.be/RkZ4OAqS9UA' %}
