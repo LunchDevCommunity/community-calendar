@@ -11,3 +11,5 @@ Lunch devs create so much great content that it can be hard to find. Folks who w
 [lunch.dev](https://events.lunch.dev) uses [Eleventy](https://events.lunch.dev) to build server-side generate the site on [Netlify](https://www.netlify.com) and using [GitHub Actions](https://github.com/features/actions).
 
 To accomplish this mob job, we'll use [Eleventy Collections](https://www.11ty.dev/docs/collections/] to add a "/posts" route.
+
+{% youtube-video "https://youtu.be/cxG6mB0Uw5M" %}
