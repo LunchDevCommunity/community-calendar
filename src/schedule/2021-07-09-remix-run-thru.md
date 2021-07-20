@@ -9,3 +9,5 @@ speakers:
 As a group, we’ll dive into the documentation na guides of Remix to create and deploy our first Remix site!
 
 [Remix Documentation](https://docs.remix.run/)
+
+{% youtube-video 'https://youtu.be/nR8iTDgzABg' %}
