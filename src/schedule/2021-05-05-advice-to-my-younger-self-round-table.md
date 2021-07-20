@@ -19,3 +19,5 @@ This round table's topic is the advice you would give to your younger self that 
 ![But wait, there's more](https://media.giphy.com/media/9V1F9o1pBjsxFzHzBr/giphy.gif)
 
 Along with providing one piece of career || technical advice, you can optionally also throw in a piece of advice involving anything else of your choice.
+
+{% youtube-video "https://youtu.be/VAx8CM6XYgw" %}
