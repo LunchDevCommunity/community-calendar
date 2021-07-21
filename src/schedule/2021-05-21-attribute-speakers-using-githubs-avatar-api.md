@@ -13,3 +13,5 @@ Here are some stretch goals:
 - Add avatar collections to a card for multi-speaker events
 - Add covered technology (may require adding images for technologies we cover)
 - Add an event-leader collection page to showcase events by that leader/speaker
+
+{% youtube-video "https://youtu.be/uWMSLaOywK4" %}
