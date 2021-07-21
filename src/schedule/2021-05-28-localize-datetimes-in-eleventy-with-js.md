@@ -6,4 +6,6 @@ speakers:
   - Michael Chan
 ---
 
+{% youtube-video "https://youtu.be/00Iu8-jAWNY" %}
+
 GitHub issue: https://github.com/LunchDevCommunity/community-calendar/issues/71
