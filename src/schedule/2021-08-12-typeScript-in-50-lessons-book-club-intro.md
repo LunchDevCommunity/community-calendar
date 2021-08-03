@@ -1,7 +1,7 @@
 ---
 title: 'TypeScript in 50 Lessons — Intro'
 type: Club
-date: 2021-08-02 17:00:00
+date: 2021-08-12 17:00:00
 speaker:
   - Michael Chan
 ---
