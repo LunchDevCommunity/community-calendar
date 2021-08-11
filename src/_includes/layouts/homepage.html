@@ -21,7 +21,6 @@
 	<body data-typeface="system-ui">
 		{% include partials/header.html %}
 		<main data-layout="centered-single-column">
-			<h2 id="next-event" class="events-title">Next event</h2>
 			<section id="next-event-section" aria-labelledby="next-event" class="events-section">
 				{% assign nextEvent = collections.upcomingEvents | first %}
 				<article aria-labelledby="{{ nextEvent.data.title | slug }}" class="event-item">
@@ -45,9 +44,62 @@
 						{% endfor %}
 					</ul>
 
-					<a href="{{ nextEvent.url }}" aria-label="View Details for {{ nextEvent.data.title }}"
+					<a
+						href="{{ nextEvent.url }}"
+						class="event-details-link"
+						aria-label="View Details for {{ nextEvent.data.title }}"
 						>View Details &#8250;</a
 					>
+				</article>
+
+				<article class="event-item" id="recurring-events">
+					<h5>Tuesdays &middot; 1PM EDT</h5>
+					<ul>
+						<li>
+							<a
+								href="https://www.twitch.tv/someanticsdev"
+								target="_blank"
+								rel="noreferrer noopener"
+								style="background-color: #ffe56a; color: #743c9b"
+								><strong>Some Antics</strong></a
+							>
+						</li>
+					</ul>
+
+					<h5>Wednesdays &middot; 1PM EDT</h5>
+					<ul>
+						<li>
+							<a
+								href="https://anchor.fm/single-threaded"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="discontinued-event"
+								><strong>Single-Threaded Episode Listening Party</strong></a
+							>
+							<!-- style="color:#E61F83;"  -->
+						</li>
+					</ul>
+
+					<h5>Thursdays &middot; 1PM EDT</h5>
+					<ul>
+						<li>
+							<a href="/typescript-in-50-lessons-book-club-intro/" style="color: #235a97"
+								><strong>TypeScript in 50 Lessons Book CLub</strong></a
+							>
+						</li>
+						<li>
+							<a
+								href="https://reactpodcast.simplecast.com/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="discontinued-event"
+								><strong>React Podcast Episode Listening Party</strong></a
+							>
+							<!-- style="background-color:#FFE001;color:#222222;"  -->
+						</li>
+					</ul>
+
+					<p class="recurring-info-message"><span class="discontinued-event">Event</span> = temporarily discontinued</p>
 				</article>
 			</section>
 
@@ -76,13 +128,15 @@
 						{% endfor %}
 					</ul>
 
-					<a href="{{ event.url }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
+					<a href="{{ event.url }}" class="event-details-link" aria-label="View Details for {{ event.data.title }}"
+						>View Details &#8250;</a
+					>
 				</article>
 				{% endfor %}
 
 				<a href="/sesh" class="event-item" id="add-event-link">
 					{% include partials/add.svg %}
-					<span>* Insert Your Awesome Event Idea Here *</span>
+					<span>*Insert Your Awesome Event Idea Here*</span>
 				</a>
 			</section>
 
@@ -109,7 +163,9 @@
 						{% endfor %}
 					</ul>
 
-					<a href="{{ event.url }}" aria-label="View Details for '{{ event.data.title }}'">View Details &#8250;</a>
+					<a href="{{ event.url }}" class="event-details-link" aria-label="View Details for '{{ event.data.title }}'"
+						>View Details &#8250;</a
+					>
 				</article>
 				{% endfor %}
 			</section>
