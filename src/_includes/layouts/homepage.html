@@ -79,6 +79,11 @@
 					<a href="{{ event.url }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
 				</article>
 				{% endfor %}
+
+				<a href="/sesh" class="event-item" id="add-event-link">
+					{% include partials/add.svg %}
+					<span>* Insert Your Awesome Event Idea Here *</span>
+				</a>
 			</section>
 
 			<h2 class="events-title">Past Events</h2>
