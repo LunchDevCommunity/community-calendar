@@ -8,7 +8,7 @@ const fetch = require('node-fetch');
 function convertStreamToCollectionItem(stream) {
 	return {
 		data: {
-			date: stream.date,
+			date: new Date(stream.date),
 			speakerDetails: stream.hosts.map((host) => ({
 				name: host.name,
 				avatar: host.avatar,
@@ -17,7 +17,6 @@ function convertStreamToCollectionItem(stream) {
 			title: `Some Antics: ${stream.fullTitle}`,
 			type: 'Live Event',
 		},
-		fileSlug: `some-antics-${stream.slug}`,
 		url: stream.url,
 	};
 }
@@ -32,7 +31,7 @@ module.exports = function () {
  * @typedef {object} Stream
  * @property {string} title
  * @property {string} fullTitle
- * @property {string} date
+ * @property {Date} date
  * @property {string} slug
  * @property {string} url
  * @property {Host[]} hosts
