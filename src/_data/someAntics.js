@@ -6,10 +6,13 @@ const fetch = require('node-fetch');
  * @returns {CollectionItem}
  */
 function convertStreamToCollectionItem(stream) {
-	console.log({ stream });
 	return {
 		data: {
 			date: stream.date,
+			speakerDetails: stream.hosts.map((host) => ({
+				name: host.name,
+				avatar: host.avatar,
+			})),
 			speakers: stream.hosts.map((host) => host.name),
 			title: `Some Antics: ${stream.fullTitle}`,
 			type: 'Live Event',
