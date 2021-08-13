@@ -17,15 +17,20 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addCollection('events', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/schedule/*.md');
 	});
+
 	eleventyConfig.addCollection('pastEvents', (collectionApi) => {
 		return collectionApi
 			.getFilteredByGlob('./src/schedule/*.md')
 			.filter((event) => isValidEvent(event) && isBefore(new Date(event.data.date), new Date()));
 	});
+
 	eleventyConfig.addCollection('upcomingEvents', (collectionApi) => {
-		return collectionApi
+		const serverEvents = collectionApi
 			.getFilteredByGlob('./src/schedule/*.md')
 			.filter((event) => isValidEvent(event) && isAfter(new Date(event.data.date), new Date()));
+
+		const someAnticsStreams = collectionApi.items[0].data.someAntics;
+		return [...serverEvents, ...someAnticsStreams];
 	});
 
 	let markdown = markdownIt({
