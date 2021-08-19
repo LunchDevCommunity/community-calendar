@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const Cache = require('@11ty/eleventy-cache-assets');
 
 /**
  *
@@ -22,9 +22,8 @@ function convertStreamToCollectionItem(stream) {
 }
 
 module.exports = function () {
-	return fetch('https://someantics.dev/api/upcomingStreams.json')
-		.then((res) => res.json())
-		.then((res) => res.events.map(convertStreamToCollectionItem));
+	const endpoint = 'https://someantics.dev/api/upcomingStreams.json';
+	return Cache(endpoint, { duration: '1d', type: 'json' }).then((res) => res.events.map(convertStreamToCollectionItem));
 };
 
 /**

@@ -13,13 +13,13 @@
 	},
 	"dependencies": {
 		"@11ty/eleventy": "^0.11.1",
+		"@11ty/eleventy-cache-assets": "^2.3.0",
 		"calendar-link": "^2.0.8",
 		"cross-env": "^7.0.3",
 		"date-fns": "^2.16.1",
 		"generate-comparators": "^1.0.3",
 		"markdown-it": "^12.0.4",
-		"markdown-it-emoji": "^2.0.0",
-		"node-fetch": "^2.6.1"
+		"markdown-it-emoji": "^2.0.0"
 	},
 	"devDependencies": {
 		"@sherby/eleventy-plugin-files-minifier": "^1.1.1",

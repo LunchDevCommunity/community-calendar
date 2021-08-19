@@ -4,3 +4,4 @@ package-lock.json
 _site/
 .idea/
 **/.DS_Store
+.cache
