@@ -38,9 +38,9 @@
 						style="--flex-stack--direction: row; --flex-stack--gap: 0.25rem"
 						class="event-item__speaker-list"
 					>
-						{% for speaker in nextEvent.data.speakers %}
+						{% for speaker in nextEvent.data.speakerDetails %}
 						<li>
-							<img data-avatar src="{{people[speaker] | personAvatar}}" alt="{{speaker}}" />
+							<img data-avatar src="{{ speaker.avatar }}" alt="{{ speaker.name }}" />
 						</li>
 						{% endfor %}
 					</ul>
@@ -69,9 +69,9 @@
 						style="--flex-stack--direction: row; --flex-stack--gap: 0.25rem"
 						class="event-item__speaker-list"
 					>
-						{% for speaker in event.data.speakers %}
+						{% for speaker in event.data.speakerDetails %}
 						<li>
-							<img data-avatar src="{{people[speaker] | personAvatar}}" alt="{{speaker}}" />
+							<img data-avatar src="{{speaker.avatar}}" alt="{{speaker.name}}" />
 						</li>
 						{% endfor %}
 					</ul>
@@ -97,9 +97,9 @@
 						style="--flex-stack--direction: row; --flex-stack--gap: 0.25rem"
 						class="event-item__speaker-list"
 					>
-						{% for speaker in event.data.speakers %}
+						{% for speaker in event.data.speakerDetails %}
 						<li>
-							<img data-avatar src="{{people[speaker] | personAvatar}}" alt="{{speaker}}" />
+							<img data-avatar src="{{speaker.avatar}}" alt="{{speaker.name}}" />
 						</li>
 						{% endfor %}
 					</ul>

@@ -1,6 +1,7 @@
 const markdownIt = require('markdown-it');
 const emoji = require('markdown-it-emoji');
 const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier');
+const { comparators } = require('generate-comparators');
 const getTwitchChannelEmbed = require('./src/utils/get-twitch-channel-embed');
 const getYouTubeVideoEmbed = require('./src/utils/get-youtube-video-embed');
 const personUtils = require('./src/utils/person');
@@ -13,19 +14,27 @@ const isProduction = process.env.NODE_ENV === 'production';
 const isValidTitle = (title = '') => title.trim().length > 2;
 const isValidEvent = (event) => isValidTitle(event.data.title);
 
+const byDate = comparators((event) => event.data.date);
+
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addCollection('events', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/schedule/*.md');
 	});
+
 	eleventyConfig.addCollection('pastEvents', (collectionApi) => {
 		return collectionApi
 			.getFilteredByGlob('./src/schedule/*.md')
 			.filter((event) => isValidEvent(event) && isBefore(new Date(event.data.date), new Date()));
 	});
+
 	eleventyConfig.addCollection('upcomingEvents', (collectionApi) => {
-		return collectionApi
+		const serverEvents = collectionApi
 			.getFilteredByGlob('./src/schedule/*.md')
 			.filter((event) => isValidEvent(event) && isAfter(new Date(event.data.date), new Date()));
+
+		const someAnticsStreams = collectionApi.items[0].data.someAntics;
+
+		return [...serverEvents, ...someAnticsStreams].sort(byDate.asc);
 	});
 
 	let markdown = markdownIt({
