@@ -1,9 +1,9 @@
 const Cache = require('@11ty/eleventy-cache-assets');
 
 /**
- *
+ * Transforms a stream provided by the Some Antics API into a page fit for the upcomingEvents collection.
  * @param {Stream} stream
- * @returns {CollectionItem}
+ * @returns {CollectionItem} stream in collection item format
  */
 function convertStreamToCollectionItem(stream) {
 	return {
@@ -21,6 +21,10 @@ function convertStreamToCollectionItem(stream) {
 	};
 }
 
+/**
+ * Fetches and caches upcoming Some Antics streams
+ * @returns {CollectionItem[]} list of upcoming streams
+ */
 module.exports = function () {
 	const endpoint = 'https://someantics.dev/api/upcomingStreams.json';
 	return Cache(endpoint, { duration: '1d', type: 'json' }).then((res) => res.events.map(convertStreamToCollectionItem));
