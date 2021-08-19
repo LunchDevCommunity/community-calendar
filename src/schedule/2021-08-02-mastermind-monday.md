@@ -2,6 +2,8 @@
 title: 'Mastermind Monday — August'
 type: Live Event
 date: 2021-08-02 17:00:00
+speakers:
+  - Michael Chan
 ---
 
 Welcome to the first server mastermind event!
