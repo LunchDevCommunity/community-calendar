@@ -35,6 +35,7 @@ This is a short-term community group for owners of the book TypeScript in 50 Les
 - composite type (object, array, function), p36
 - weakly typed, p36
 - strongly typed, p37
+- shape, p38
 - structural type system, p39
 - custom type, p42
 - type declaration file (`.d.ts`), p47
