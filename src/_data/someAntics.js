@@ -34,7 +34,7 @@ module.exports = function () {
  * @typedef {object} Stream
  * @property {string} title event title (in short form, if one is needed)
  * @property {string} fullTitle event title (in long form, if one is needed)
- * @property {Date} date event start time
+ * @property {string} date event start time in ISO format
  * @property {string} description a full description of the event
  * @property {string} slug an identifier for the event, unique from others in the same series
  * @property {string} url a URL for finding more information about the event
@@ -54,7 +54,7 @@ module.exports = function () {
 /**
  * @typedef {object} CollectionItem
  * @property {object} data
- * @property {string} data.date
+ * @property {Date} data.date event start time
  * @property {string[]} data.speakers
  * @property {string} data.title
  * @property {string} data.type
