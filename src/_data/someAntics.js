@@ -32,22 +32,23 @@ module.exports = function () {
 
 /**
  * @typedef {object} Stream
- * @property {string} title
- * @property {string} fullTitle
- * @property {Date} date
- * @property {string} slug
- * @property {string} url
- * @property {Host[]} hosts
+ * @property {string} title event title (in short form, if one is needed)
+ * @property {string} fullTitle event title (in long form, if one is needed)
+ * @property {Date} date event start time
+ * @property {string} description a full description of the event
+ * @property {string} slug an identifier for the event, unique from others in the same series
+ * @property {string} url a URL for finding more information about the event
+ * @property {Host[]} hosts list of people who could be said to be running or hosting the event
  */
 
 /**
- * @typedef {object} Host
- * @property {string} name
- * @property {string} avatar
- * @property {string} pronouns
- * @property {string} [instagram]
- * @property {string} [twitter]
- * @property {string} [website]
+ * @typedef {object} Host one of potentially many people who could be said to be "hosting" an event
+ * @property {string} name host's full name
+ * @property {string} avatar image source for host's avatar
+ * @property {string} pronouns host's pronouns
+ * @property {string} [instagram] host's Instagram username (without the `@` sign)
+ * @property {string} [twitter] host's Twitter username (without the `@` sign)
+ * @property {string} [website] URL for a meaningful personal site pertaining to the host
  */
 
 /**
