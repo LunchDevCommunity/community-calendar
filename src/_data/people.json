@@ -1,6 +1,6 @@
 {
 	"Adrianne Mallett": {
-		"avatar_url": "https://pbs.twimg.com/profile_images/1317656526459371520/fucCnaWq_400x400.jpg"
+		"avatar_url": "https://res.cloudinary.com/bendmyers/image/upload/v1617491898/Some%20Antics%20Avatars/Adrianne%20Mallett.jpg"
 	},
 	"Alex Anderson": {
 		"github": "alexanderson1993"
@@ -38,6 +38,9 @@
 	"Chirag": {},
 	"Crystal Martin": {
 		"avatar_url": "https://pbs.twimg.com/profile_images/1340450662845472773/Bui1g2e4_400x400.jpg"
+	},
+	"Dan Goodwin": {
+		"github": "dcgoodwin2112"
 	},
 	"David Ceddia": {
 		"github": "dceddia"
