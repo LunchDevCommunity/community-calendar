@@ -39,6 +39,8 @@ module.exports = function () {
  * @property {string} slug an identifier for the event, unique from others in the same series
  * @property {string} url a URL for finding more information about the event
  * @property {Host[]} hosts list of people who could be said to be running or hosting the event
+ * @property {Object} calendarLinks a map of (optional) "Add to Calendar" links
+ * @property {string} [calendarLinks.google] an (optional) "Add to Google Calendar" link
  */
 
 /**
