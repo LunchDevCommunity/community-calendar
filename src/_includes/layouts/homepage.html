@@ -46,9 +46,11 @@
 						{% endfor %}
 					</ul>
 
-					<a href="{{ nextEvent.url }}" aria-label="View Details for {{ nextEvent.data.title }}"
-						>View Details &#8250;</a
-					>
+					{% assign nextEventUrl = nextEvent.url %} {% if nextEvent.data.url %} {% assign nextEventUrl =
+					nextEvent.data.url %} {% endif %}
+					<a href="{{ nextEventUrl }}" aria-label="View Details for {{ nextEvent.data.title }}">
+						View Details &#8250;
+					</a>
 				</article>
 			</section>
 
@@ -77,7 +79,8 @@
 						{% endfor %}
 					</ul>
 
-					<a href="{{ event.url }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
+					{% assign eventUrl = event.url %} {% if event.data.url %} {% assign eventUrl = event.data.url %} {% endif %}
+					<a href="{{ eventUrl }}" aria-label="View Details for {{ event.data.title }}">View Details &#8250;</a>
 				</article>
 				{% endfor %}
 			</section>
