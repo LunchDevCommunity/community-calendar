@@ -27,7 +27,9 @@ function convertStreamToCollectionItem(stream) {
  */
 module.exports = function () {
 	const endpoint = 'https://someantics.dev/api/upcomingStreams.json';
-	return Cache(endpoint, { duration: '1d', type: 'json' }).then((res) => res.events.map(convertStreamToCollectionItem));
+	return Cache(endpoint, { duration: '1d', type: 'json' }).then((res) =>
+		res.events.map(convertStreamToCollectionItem).splice(0, 4)
+	);
 };
 
 /**
