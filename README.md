@@ -1,10 +1,12 @@
 # 📅 Lunch.dev Community Calendar
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Welcome to the **Lunch.dev Community Calendar**! This site shows off all of the cool things we've been doing in our [Discord community](https://https://events.lunch.dev/discord). It's built with a static site generator called [Eleventy](https://11ty.dev).
+Welcome to the **Lunch.dev Community Calendar**! This site shows off all of the cool things we've been doing in our [Discord community](https://discord.gg/lunchdec). It's built with a static site generator called [Eleventy](https://11ty.dev).
 
 ## Sounds great! How do I run it?
 

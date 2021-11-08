@@ -1,7 +1,7 @@
 const { google, outlook, office365, ics } = require('calendar-link');
 const { isBefore } = require('date-fns');
 const { getAvatarUrl } = require('../utils/person');
-const url = 'https://events.lunch.dev/discord';
+const url = 'https://discord.gg/lunchdev';
 const location = 'Lunch Dev Community Discord at events.lunch.dev';
 
 function updateDesc(description, url) {
