@@ -3,21 +3,21 @@
 	<ul class="add-to-calendar">
 		<li>
 			<a aria-label="Add to Google Calendar" href="{{ calendarLinks.googleLink }}">
-				{% include partials/googlecalendar.svg %}
+				{% include 'partials/googlecalendar.svg' %}
 			</a>
 		</li>
 		<li>
 			<a aria-label="Add to Outlook Calendar" href="{{ calendarLinks.outlookLink }}">
-				{% include partials/microsoftoutlook.svg %}
+				{% include 'partials/microsoftoutlook.svg' %}
 			</a>
 		</li>
 		<li>
 			<a aria-label="Add to Office 365 Calendar" href="{{ calendarLinks.officeLink }}">
-				{% include partials/microsoftoffice.svg %}
+				{% include 'partials/microsoftoffice.svg' %}
 			</a>
 		</li>
 		<li>
-			<a aria-label="Add to ics Calendar" href="{{ calendarLinks.icsLink }}"> {% include partials/calendar.svg %} </a>
+			<a aria-label="Add to ics Calendar" href="{{ calendarLinks.icsLink }}"> {% include 'partials/calendar.svg' %} </a>
 		</li>
 	</ul>
 </div>

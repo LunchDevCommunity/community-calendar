@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		{% include partials/favicon.html %}
+		{% include 'partials/favicon.html' %}
 		<link rel="stylesheet" href="/css/reset.css" />
 		<link rel="stylesheet" href="/css/styles.css" />
 		<link rel="stylesheet" href="/css/navbar.css" />
@@ -14,16 +14,16 @@
 			rel="stylesheet"
 		/>
 		<title>{{ title }} | Lunch.dev Community Calendar</title>
-		{% include partials/analytics.html %}
+		{% include 'partials/analytics.html' %}
 	</head>
 	<body data-typeface="system-ui">
-		{% include partials/header.html %}
+		{% include 'partials/header.html' %}
 		<div data-layout="centered-single-column">
 			<main>
 				<h1>{{ title }}</h1>
 				{{ content }}
 			</main>
 		</div>
-		{% include partials/footer.html %}
+		{% include 'partials/footer.html' %}
 	</body>
 </html>
