@@ -1,0 +1,37 @@
+---
+layout: layouts/page
+---
+<pre>{{ online | dump }}</pre>
+<hr />
+{% if online.size == 0 %}
+<h2>No one is streaming right now!</h2>
+<p>But check out some channels from around the community.</p>
+
+{% elsif online.size == 1 %}
+{% assign featuredChannel = online[0] %}
+<h2>{{ featuredChannel }} is streaming right now!</h2>
+{% twitch featuredChannel %}
+
+{% else %}
+<h2>{{ online.size }} community members are streaming right now!</h2>
+<ul>
+	{% for streamer in online %}
+	<li>
+		<a href="https://twitch.tv/{{streamer}}">
+			{{ streamer }}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
+{% endif %}
+
+<h2>Streamer List</h2>
+<ul>
+	{% for streamer in streamers %}
+	<li>
+		<a href="https://twitch.tv/{{streamer}}">
+			{{ streamer }}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
