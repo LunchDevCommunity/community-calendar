@@ -12,7 +12,7 @@
 		"recognize": "all-contributors add"
 	},
 	"dependencies": {
-		"@11ty/eleventy": "^1.0.0-beta.4",
+		"@11ty/eleventy": "1.0.0-beta.3",
 		"@11ty/eleventy-cache-assets": "^2.3.0",
 		"axios": "^0.24.0",
 		"calendar-link": "^2.0.8",
