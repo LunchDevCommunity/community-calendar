@@ -1,4 +1,3 @@
-require('dotenv').config();
 const axios = require('axios');
 const qs = require('querystring');
 
@@ -25,6 +24,10 @@ async function isStreaming(channel) {
 module.exports = {
 	eleventyComputed: {
 		online: async ({ streamers }) => {
+			if (!process.env.TWITCH_CLIENT_ID) {
+				return [];
+			}
+
 			const opts = {
 				client_id: process.env.TWITCH_CLIENT_ID,
 				client_secret: process.env.TWITCH_CLIENT_SECRET,
