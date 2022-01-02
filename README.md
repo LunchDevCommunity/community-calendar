@@ -6,7 +6,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Welcome to the **Lunch.dev Community Calendar**! This site shows off all of the cool things we've been doing in our [Discord community](https://discord.gg/lunchdec). It's built with a static site generator called [Eleventy](https://11ty.dev).
+Welcome to the **Lunch.dev Community Calendar**! This site shows off all of the cool things we've been doing in our [Discord community](https://discord.gg/lunchdev). It's built with a static site generator called [Eleventy](https://11ty.dev).
 
 ## Sounds great! How do I run it?
 
