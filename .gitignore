@@ -5,3 +5,6 @@ _site/
 .idea/
 **/.DS_Store
 .cache
+.env
+netlify/functions/onrequest/**
+!netlify/functions/onrequest/index.js

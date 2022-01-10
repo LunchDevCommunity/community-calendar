@@ -1,2 +1,9 @@
 [build.environment]
-  TZ='America/Los_Angeles'
+TZ = "America/Los_Angeles"
+
+[[redirects]]
+from = "/live/"
+to = "/.netlify/functions/onrequest"
+status = 200
+force = true
+_generated_by_eleventy_serverless = "onrequest"

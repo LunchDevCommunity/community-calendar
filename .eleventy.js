@@ -1,3 +1,4 @@
+const { EleventyServerlessBundlerPlugin } = require('@11ty/eleventy');
 const markdownIt = require('markdown-it');
 const emoji = require('markdown-it-emoji');
 const eleventyPluginFilesMinifier = require('@sherby/eleventy-plugin-files-minifier');
@@ -17,6 +18,12 @@ const isValidEvent = (event) => isValidTitle(event.data.title);
 const byDate = comparators((event) => event.data.date);
 
 module.exports = (eleventyConfig) => {
+	eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+		name: 'onrequest',
+		functionsDir: './netlify/functions/',
+		copy: ['src/utils/'],
+	});
+
 	eleventyConfig.addCollection('events', (collectionApi) => {
 		return collectionApi.getFilteredByGlob('./src/schedule/*.md');
 	});
