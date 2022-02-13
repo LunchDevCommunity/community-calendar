@@ -21,6 +21,8 @@
 	<body data-typeface="system-ui">
 		{% include partials/header.html %}
 		<main data-layout="centered-single-column">
+			{{ sesh_events.length }} {% for event in sesh_events %} {{event.description}} {{event.summary}} {% endfor %} {%
+			for event in sesh_events %} {{ event.summary }} {% endfor %}
 			<h2 id="next-event" class="events-title">Next event</h2>
 			<section id="next-event-section" aria-labelledby="next-event" class="events-section">
 				{% assign nextEvent = collections.upcomingEvents | first %}

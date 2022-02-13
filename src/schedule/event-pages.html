@@ -1,0 +1,12 @@
+---
+pagination:
+  data: sesh_events
+  size: 1
+  alias: event
+permalink: 'sesh/events/{{ event.data.title | slug }}.html'
+layout: 'layouts/event.html'
+---
+
+<!-- https://www.11ty.dev/docs/pages-from-data/ -->
+<div>{{event.data.title}}</div>
+<div>{{event.data.description | markdown}}</div>

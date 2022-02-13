@@ -33,8 +33,14 @@ module.exports = (eleventyConfig) => {
 			.filter((event) => isValidEvent(event) && isAfter(new Date(event.data.date), new Date()));
 
 		const someAnticsStreams = collectionApi.items[0].data.someAntics;
+		const seshEvents = collectionApi.items[0].data.sesh_events.reduce((acc, item) => {
+			if (new Date() >= new Date(item.data.date)) {
+				return acc;
+			}
+			return [...acc, item];
+		}, []);
 
-		return [...serverEvents, ...someAnticsStreams].sort(byDate.asc);
+		return [...serverEvents, ...someAnticsStreams, ...seshEvents].sort(byDate.asc);
 	});
 
 	let markdown = markdownIt({
@@ -52,10 +58,12 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy('_redirects');
 
 	eleventyConfig.addFilter('asDateOnly', function (date) {
+		console.log(date);
 		return format(new Date(date), 'PP');
 	});
 
 	eleventyConfig.addFilter('toISOString', function (date) {
+		console.log(date);
 		return new Date(date).toISOString();
 	});
 
